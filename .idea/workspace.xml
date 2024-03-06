@@ -18,7 +18,46 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090d90e-5e8f-4f7e-bca2-0037be433599" name="Changes" comment="first message" />
+    <list default="true" id="6090d90e-5e8f-4f7e-bca2-0037be433599" name="Changes" comment="first message">
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/ActivationFunction.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/LReLU.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/LReLU.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Sigmoid.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Sigmoid.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Thangh.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Thangh.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/ConvolutionalLayer.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/ConvolutionalLayer.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/DenseLayer.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/DenseLayer.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/Layer.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/PoolingLayer.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/PoolingLayer.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/RecurrentLayer.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Layer/RecurrentLayer.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/LossFunctions/CrossEntropy.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/LossFunctions/CrossEntropy.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/LossFunctions/LossFunction.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/LossFunctions/SquareError.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/LossFunctions/SquareError.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/ADAM.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/ADAM.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFGS.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFGS.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFP.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFP.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/GD.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/GD.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/SGD.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer/SGD.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/wekopsodjkoewjpi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/laxasjksdjkfekfk" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +73,9 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2dJrNKKUaLKTjNzhGgMioale9LT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,6 +95,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\GitHub\FenDL\include" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -68,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709736980870</updated>
-      <workItem from="1709736982626" duration="413000" />
+      <workItem from="1709736982626" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="first message">
       <option name="closed" value="true" />
@@ -78,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709739024016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first message">
+      <option name="closed" value="true" />
+      <created>1709739154643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709739154643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

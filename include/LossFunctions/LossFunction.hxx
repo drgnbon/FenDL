@@ -1,0 +1,8 @@
+//
+// Created by evgen on 06.03.2024.
+//
+
+#ifndef FENDL_LOSSFUNCTION_HXX
+#define FENDL_LOSSFUNCTION_HXX
+
+#endif //FENDL_LOSSFUNCTION_HXX
