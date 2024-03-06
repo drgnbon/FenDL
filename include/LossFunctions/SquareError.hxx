@@ -1,14 +1,12 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #ifndef FENDL_SQUAREERROR_HXX
 #define FENDL_SQUAREERROR_HXX
 
+#include "LossFunction.hxx"
 
-class SquareError {
 
+class SquareError : public LossFunction {
+public:
+    double getLoss() override;
 };
 
-
-#endif //FENDL_SQUAREERROR_HXX
+#endif

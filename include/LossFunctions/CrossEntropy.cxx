@@ -1,5 +1,5 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #include "CrossEntropy.hxx"
+
+double CrossEntropy::getLoss() {
+    return 0;
+}

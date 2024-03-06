@@ -6,7 +6,7 @@
 #define FENDL_SEQUENTIONALMODEL_HXX
 
 
-class sequentionalmodel {
+class SequentionalModel {
 
 };
 

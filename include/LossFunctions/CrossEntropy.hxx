@@ -1,14 +1,12 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #ifndef FENDL_CROSSENTROPY_HXX
 #define FENDL_CROSSENTROPY_HXX
 
+#include "LossFunction.hxx"
 
-class CrossEntropy {
-
+class CrossEntropy : LossFunction
+{
+public:
+    double getLoss() override;
 };
 
-
-#endif //FENDL_CROSSENTROPY_HXX
+#endif

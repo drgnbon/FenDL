@@ -1,3 +1,12 @@
-//
-// Created by Andrey on 06.03.2024.
-//
+#include <iostream>
+#include <Eigen>
+#include "ActivationFunction.hxx"
+#include "ELU.hxx"
+int main()
+{
+    ELU a;
+    a.getActivateValue();
+
+
+    std::cout << "sadasd\n";
+}

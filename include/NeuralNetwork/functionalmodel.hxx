@@ -6,7 +6,7 @@
 #define FENDL_FUNCTIONALMODEL_HXX
 
 
-class functionalmodel {
+class FunctionalModel {
 
 };
 

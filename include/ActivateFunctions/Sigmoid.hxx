@@ -1,14 +1,12 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #ifndef FENDL_SIGMOID_HXX
 #define FENDL_SIGMOID_HXX
 
+#include "ActivationFunction.hxx"
 
-class Sigmoid {
-
+class Sigmoid : ActivationFunction{
+public:
+    double getActivateValue() override;
 };
 
 
-#endif //FENDL_SIGMOID_HXX
+#endif

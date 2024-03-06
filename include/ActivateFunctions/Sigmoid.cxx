@@ -1,5 +1,4 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #include "Sigmoid.hxx"
+double Sigmoid::getActivateValue() {
+    return 0;
+}

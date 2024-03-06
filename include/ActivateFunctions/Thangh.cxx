@@ -1,5 +1,4 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #include "Thangh.hxx"
+double Thangh::getActivateValue() {
+    return 0;
+}

@@ -1,5 +1,4 @@
-//
-// Created by evgen on 06.03.2024.
-//
-
 #include "LReLU.hxx"
+double LReLU::getActivateValue() {
+    return 0;
+}
