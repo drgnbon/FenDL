@@ -1,0 +1,8 @@
+//
+// Created by Andrey on 06.03.2024.
+//
+
+#ifndef FENDL_NEURALNETWORK_HXX
+#define FENDL_NEURALNETWORK_HXX
+
+#endif //FENDL_NEURALNETWORK_HXX

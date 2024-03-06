@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -19,44 +19,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6090d90e-5e8f-4f7e-bca2-0037be433599" name="Changes" comment="first message">
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/ActivationFunction.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/LReLU.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/LReLU.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Sigmoid.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Sigmoid.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Thangh.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ActivateFunctions/Thangh.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/ConvolutionalLayer.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/ConvolutionalLayer.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/DenseLayer.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/DenseLayer.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/Layer.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/PoolingLayer.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/PoolingLayer.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/RecurrentLayer.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Layer/RecurrentLayer.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/LossFunctions/CrossEntropy.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/LossFunctions/CrossEntropy.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/LossFunctions/LossFunction.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/LossFunctions/SquareError.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/LossFunctions/SquareError.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/ADAM.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/ADAM.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFGS.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFGS.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFP.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/BFP.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/GD.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/GD.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/SGD.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer/SGD.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FenDL.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/NeuralNetwork.hxx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/Optimizer.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies/wekopsodjkoewjpi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/laxasjksdjkfekfk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ActivateFunctions/ActivationFunction.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/ActivationFunction.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Layer/Layer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/Layer.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LossFunctions/LossFunction.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/LossFunction.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/functionalmodel.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/functionalmodel.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/sequentionalmodel.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/sequentionalmodel.hxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +41,13 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2dJrNKKUaLKTjNzhGgMioale9LT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -88,6 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/programming/FenDL/CMakeLists.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,13 +74,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\GitHub\FenDL\include" />
+      <recent name="D:\programming\FenDL" />
+      <recent name="D:\programming\FenDL\include" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -115,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709736980870</updated>
-      <workItem from="1709736982626" duration="1955000" />
+      <workItem from="1709736982626" duration="413000" />
     </task>
     <task id="LOCAL-00001" summary="first message">
       <option name="closed" value="true" />
@@ -125,25 +103,16 @@
       <option name="project" value="LOCAL" />
       <updated>1709739024016</updated>
     </task>
-    <task id="LOCAL-00002" summary="first message">
-      <option name="closed" value="true" />
-      <created>1709739154643</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1709739154643</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VCPKGProject">
-    <isAutomaticEditVcpkgJson value="false" />
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
-    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first message" />
