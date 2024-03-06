@@ -18,20 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6090d90e-5e8f-4f7e-bca2-0037be433599" name="Changes" comment="first message">
-      <change afterPath="$PROJECT_DIR$/FenDL.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/NeuralNetwork.hxx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/Optimizer.hxx" afterDir="false" />
+    <list default="true" id="6090d90e-5e8f-4f7e-bca2-0037be433599" name="Changes" comment="FenDL structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ActivateFunctions/ActivationFunction.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/ActivationFunction.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Layer/Layer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/Layer.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/LossFunctions/LossFunction.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/LossFunction.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/functionalmodel.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/functionalmodel.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/functionalmodel.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/sequentionalmodel.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/NeuronNetwork/sequentionalmodel.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/NeuralNetwork/sequentionalmodel.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Layer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/Layer.hxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709739024016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FenDL structure">
+      <option name="closed" value="true" />
+      <created>1709741971177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709741971177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first message" />
-    <option name="LAST_COMMIT_MESSAGE" value="first message" />
+    <MESSAGE value="FenDL structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="FenDL structure" />
   </component>
 </project>
