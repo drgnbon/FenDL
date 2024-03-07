@@ -1,12 +1,10 @@
 #include <iostream>
-#include <Eigen>
-#include "ActivationFunction.hxx"
-#include "ELU.hxx"
+#include <Eigen/Eigen>
+#include <FenDL/FenDL.hxx>
+
 int main()
 {
     ELU a;
     a.getActivateValue();
-
-
     std::cout << "sadasd\n";
 }
