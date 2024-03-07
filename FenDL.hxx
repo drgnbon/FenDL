@@ -1,4 +1,0 @@
-#ifndef FENDL_FENDL_HXX
-#define FENDL_FENDL_HXX
-
-#endif //FENDL_FENDL_HXX
