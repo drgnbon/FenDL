@@ -1,12 +1,12 @@
 #ifndef FENDL_THANGH_HXX
 #define FENDL_THANGH_HXX
 
-#include <FenDL/ActivateFunctions/ActivateFunction.hxx>
+#include <FenDL/ActivateFunction.hxx>
+namespace FenDL {
+    class Thangh : ActivationFunction {
+    public:
+        double getActivateValue() override;
+    };
 
-class Thangh : ActivationFunction {
-public:
-    double getActivateValue() override;
-};
-
-
+}
 #endif

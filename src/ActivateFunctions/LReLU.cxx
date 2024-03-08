@@ -1,5 +1,6 @@
 #include "FenDL/ActivateFunctions/LReLU.hxx"
-
-double LReLU::getActivateValue() {
-    return 0;
+namespace FenDL {
+    double LReLU::getActivateValue() {
+        return 0;
+    }
 }

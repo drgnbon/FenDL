@@ -5,7 +5,7 @@
 #ifndef FENDL_BFGS_HXX
 #define FENDL_BFGS_HXX
 
-#include <FenDL/Optimizers/Optimizer.hxx>
+#include <FenDL/Optimizer.hxx>
 
 class BFGS {
 

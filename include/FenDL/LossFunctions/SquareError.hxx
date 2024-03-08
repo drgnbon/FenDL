@@ -1,7 +1,7 @@
 #ifndef FENDL_SQUAREERROR_HXX
 #define FENDL_SQUAREERROR_HXX
 
-#include <FenDL/LossFunctions/LossFunction.hxx>
+#include <FenDL/LossFunction.hxx>
 
 class SquareError : public LossFunction {
 public:

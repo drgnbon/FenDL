@@ -1,10 +1,11 @@
 #include <iostream>
-#include <Eigen/Eigen>
+#include <Eigen/Dense>
 #include <FenDL/FenDL.hxx>
 
 int main()
 {
-    ELU a;
+
+    FenDL::ELU a;
     a.getActivateValue();
     std::cout << "sadasd\n";
 }

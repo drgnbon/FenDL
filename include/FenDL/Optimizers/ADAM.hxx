@@ -1,7 +1,7 @@
 #ifndef FENDL_ADAM_HXX
 #define FENDL_ADAM_HXX
 
-#include <FenDL/Optimizers/Optimizer.hxx>
+#include <FenDL/Optimizer.hxx>
 
 class ADAM {
 

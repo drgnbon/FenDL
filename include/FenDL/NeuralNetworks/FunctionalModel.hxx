@@ -5,7 +5,7 @@
 #ifndef FENDL_FUNCTIONALMODEL_HXX
 #define FENDL_FUNCTIONALMODEL_HXX
 
-#include <FenDL/NeuralNetworks/NeuralNetwork.hxx>
+#include <FenDL/NeuralNetwork.hxx>
 
 class FunctionalModel {
 

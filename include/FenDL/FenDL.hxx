@@ -1,23 +1,24 @@
 #ifndef FENDL_FENDL_HXX
 #define FENDL_FENDL_HXX
 
-#include <FenDL/ActivateFunctions/ELU.hxx>
-#include <FenDL/ActivateFunctions/LReLU.hxx>
-#include <FenDL/ActivateFunctions/ReLU.hxx>
-#include <FenDL/ActivateFunctions/Sigmoid.hxx>
-#include <FenDL/ActivateFunctions/Thangh.hxx>
-#include <FenDL/Layers/ConvolutionalLayer.hxx>
-#include <FenDL/Layers/DenseLayer.hxx>
-#include <FenDL/Layers/PoolingLayer.hxx>
-#include <FenDL/Layers/RecurrentLayer.hxx>
-#include <FenDL/LossFunctions/CrossEntropy.hxx>
-#include <FenDL/LossFunctions/SquareError.hxx>
-#include <FenDL/NeuralNetworks/FunctionalModel.hxx>
-#include <FenDL/NeuralNetworks/SequentionalModel.hxx>
-#include <FenDL/Optimizers/ADAM.hxx>
-#include <FenDL/Optimizers/BFGS.hxx>
-#include <FenDL/Optimizers/BFP.hxx>
-#include <FenDL/Optimizers/GD.hxx>
-#include <FenDL/Optimizers/SGD.hxx>
+#include "ActivateFunction.hxx"
+#include "Layer.hxx"
+#include "LossFunction.hxx"
+#include "NeuralNetwork.hxx"
+#include "Optimizer.hxx"
+#include "ActivateFunctions/ELU.hxx"
+#include "ActivateFunctions/LReLU.hxx"
+#include "ActivateFunctions/ReLU.hxx"
+#include "ActivateFunctions/Sigmoid.hxx"
+#include "ActivateFunctions/Thangh.hxx"
+#include "Layers/ConvolutionalLayer.hxx"
+#include "Layers/DenseLayer.hxx"
+#include "Layers/PoolingLayer.hxx"
+#include "Layers/RecurrentLayer.hxx"
+#include "LossFunctions/CrossEntropy.hxx"
+#include "LossFunctions/SquareError.hxx"
+#include "NeuralNetworks/FunctionalModel.hxx"
+#include "NeuralNetworks/SequentionalModel.hxx"
+
 
 #endif //FENDL_FENDL_HXX

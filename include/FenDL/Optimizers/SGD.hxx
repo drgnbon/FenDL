@@ -5,7 +5,7 @@
 #ifndef FENDL_SGD_HXX
 #define FENDL_SGD_HXX
 
-#include <FenDL/Optimizers/Optimizer.hxx>
+#include <FenDL/Optimizer.hxx>
 
 class SGD {
 

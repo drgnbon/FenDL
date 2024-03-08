@@ -1,5 +1,6 @@
 #include "FenDL/ActivateFunctions/Thangh.hxx"
-
-double Thangh::getActivateValue() {
-    return 0;
+namespace FenDL {
+    double Thangh::getActivateValue() {
+        return 0;
+    }
 }

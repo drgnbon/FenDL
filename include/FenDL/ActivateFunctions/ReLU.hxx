@@ -1,12 +1,12 @@
 #ifndef FENDL_RELU_HXX
 #define FENDL_RELU_HXX
 
-#include <FenDL/ActivateFunctions/ActivateFunction.hxx>
+#include <FenDL/ActivateFunction.hxx>
+namespace FenDL {
+    class ReLU : public ActivationFunction {
+    public:
+        double getActivateValue() override;
+    };
 
-class ReLU : ActivationFunction {
-public:
-    double getActivateValue() override;
-};
-
-
+}
 #endif

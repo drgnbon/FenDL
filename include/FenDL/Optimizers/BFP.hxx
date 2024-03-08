@@ -5,7 +5,7 @@
 #ifndef FENDL_BFP_HXX
 #define FENDL_BFP_HXX
 
-#include <FenDL/Optimizers/Optimizer.hxx>
+#include <FenDL/Optimizer.hxx>
 
 class BFP {
 

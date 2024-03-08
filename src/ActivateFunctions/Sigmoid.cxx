@@ -1,5 +1,6 @@
 #include "FenDL/ActivateFunctions/Sigmoid.hxx"
-
-double Sigmoid::getActivateValue() {
-    return 0;
+namespace FenDL {
+    double Sigmoid::getActivateValue() {
+        return 0;
+    }
 }
