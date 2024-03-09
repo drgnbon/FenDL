@@ -1,0 +1,147 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen-3.4.0/cmake/EigenTesting.cmake",
+			"dependencies/eigen-3.4.0/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "product_large_1::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "product_large_2::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "product_large_3::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "product_large_4::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "product_large_9::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "product_large_8::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "product_large_7::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "product_large_10::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "product_large_5::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "product_large_6::@acb53749e214ef6f65c4"
+		}
+	],
+	"id" : "product_large::@acb53749e214ef6f65c4",
+	"name" : "product_large",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen-3.4.0/test",
+		"source" : "dependencies/eigen-3.4.0/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

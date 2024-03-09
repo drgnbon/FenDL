@@ -1,0 +1,25 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/blas/testing",
+	"dir-cur-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2/dependencies/eigen-3.4.0/blas/testing",
+	"dir-top-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug",
+	"dir-top-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2",
+	"exports" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\DrgNBoN\\Desktop\\FenDL 2\\dependencies\\eigen-3.4.0"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/blas/CMakeFiles/eigen_blas.dir"
+	],
+	"module-dir" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/blas/testing",
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

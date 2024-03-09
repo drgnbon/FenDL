@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/DrgNBoN/Desktop/FenDL 2/dependencies/eigen-3.4.0/test/nestbyvalue.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "nestbyvalue"
+	}
+}

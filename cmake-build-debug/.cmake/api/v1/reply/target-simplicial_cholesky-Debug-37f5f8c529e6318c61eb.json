@@ -1,0 +1,107 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ei_add_test",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"dependencies/eigen-3.4.0/cmake/EigenTesting.cmake",
+			"dependencies/eigen-3.4.0/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 258,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "simplicial_cholesky_21::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "simplicial_cholesky_23::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "simplicial_cholesky_22::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "simplicial_cholesky_13::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "simplicial_cholesky_11::@acb53749e214ef6f65c4"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "simplicial_cholesky_12::@acb53749e214ef6f65c4"
+		}
+	],
+	"id" : "simplicial_cholesky::@acb53749e214ef6f65c4",
+	"name" : "simplicial_cholesky",
+	"paths" : 
+	{
+		"build" : "dependencies/eigen-3.4.0/test",
+		"source" : "dependencies/eigen-3.4.0/test"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
