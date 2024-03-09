@@ -1,9 +1,9 @@
 
-set(CTEST_SOURCE_DIRECTORY  "C:/Users/DrgNBoN/Desktop/FenDL 2")
-set(CTEST_BINARY_DIRECTORY  "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug")
+set(CTEST_SOURCE_DIRECTORY  "D:/programming/FenDL")
+set(CTEST_BINARY_DIRECTORY  "D:/programming/FenDL/cmake-build-debug")
 set(CTEST_CMAKE_GENERATOR   "Ninja")
-set(CTEST_BUILD_NAME        "unknownwin-_-13.2.0-sse2-64bit")
-set(CTEST_SITE              "drgnbon")
+set(CTEST_BUILD_NAME        "unknownwin-g++-13.1.0-sse2-64bit")
+set(CTEST_SITE              "desktop-l6bqhp9")
 
 set(MODEL Experimental)
 if(${CTEST_SCRIPT_ARG} MATCHES Nightly)

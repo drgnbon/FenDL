@@ -32,3 +32,8 @@ void PerceptronLayer::activateLayer(ActivationFunction* activation_function,Eige
   _values = active_values_previous_layer * weights_previous_layer;
   _active_values = activation_function->getActivateMatrix(_values);
 }
+
+void PerceptronLayer::calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,ActivationFunction* activation_function)
+{
+    _gradient = Eigen::MatrixXd( derivation_next_layer.array() * activation_function->getDerivateMatrix(values_next_layer).array()    ) * weights_this_layer.transpose();
+}

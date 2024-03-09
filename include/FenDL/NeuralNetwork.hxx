@@ -13,7 +13,7 @@
 class NeuralNetwork
 {
 public:
-  std::vector<std::shared_ptr<Layer>> layers;
+  std::vector< std::shared_ptr<Layer> > layers;
   size_t _size_of_input = 0;
 
   ActivationFunction* _current_activation_function;
@@ -38,8 +38,16 @@ public:
       layers[i]->activateLayer(_current_activation_function,layers[i-1]->_active_values,layers[i-1]->_weights);
   }
 
+  void backPropogation(Eigen::MatrixXd right_answer)
+  {
+    layers[layers.size()-1]->_gradient = 2*(layers[layers.size()-1]->_active_values - right_answer);
 
+    for(int i = layers.size()-2;i >= 0;--i)
+    {
+        layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_gradient,layers[i+1]->_values,_current_activation_function);
+    }
 
+  }
 
 
 

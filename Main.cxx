@@ -27,10 +27,16 @@ int main() {
 
   network.forwardFeed();
 
-  for(auto i : network.layers)std::cout << i->_active_values << "\n\n\n";
+  //for(auto i : network.layers)std::cout << i->_active_values << "\n\n\n";
 
+  Eigen::MatrixXd ra(1,5);
+  ra << 1,0,0,0,0;
 
+  network.backPropogation(ra);
 
+  for(auto i : network.layers)std::cout << i->_gradient << "\n\n\n";
+
+  system("pause");
 
   return 0;
 }

@@ -169,9 +169,9 @@ targets_to_make=$(echo "$TESTSLIST" | grep -E "$1" | xargs echo)
 
 if [ -n "${EIGEN_MAKE_ARGS:+x}" ]
 then
-  C:/Program Files/JetBrains/CLion 2023.3.1/bin/ninja/win/x64/ninja.exe $targets_to_make ${EIGEN_MAKE_ARGS}
+  D:/programs/CLion/bin/ninja/win/x64/ninja.exe $targets_to_make ${EIGEN_MAKE_ARGS}
 else
-  C:/Program Files/JetBrains/CLion 2023.3.1/bin/ninja/win/x64/ninja.exe $targets_to_make 
+  D:/programs/CLion/bin/ninja/win/x64/ninja.exe $targets_to_make 
 fi
 exit $?
 

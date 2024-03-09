@@ -17,6 +17,8 @@ public:
 
   virtual void activateLayer(ActivationFunction* activation_function,Eigen::MatrixXd active_values_previous_layer,Eigen::MatrixXd weights_previous_layer) = 0;
 
+  virtual void calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,ActivationFunction* activation_function) = 0;
+
 
   Eigen::MatrixXd _weights;
   size_t _size_of_output;

@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2023.3.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\DrgNBoN\Desktop\FenDL 2" -B "C:\Users\DrgNBoN\Desktop\FenDL 2\cmake-build-debug"
+D:\programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S D:\programming\FenDL -B D:\programming\FenDL\cmake-build-debug
 -- Performing Test COMPILER_SUPPORT_std=cpp03
 -- Performing Test COMPILER_SUPPORT_std=cpp03 - Success
 -- Standard libraries to link to explicitly: none
@@ -14,7 +14,7 @@
 -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.53.0")
 -- Could NOT find GoogleHash (missing: GOOGLEHASH_INCLUDES GOOGLEHASH_COMPILE) 
 -- Could NOT find Adolc (missing: ADOLC_INCLUDES ADOLC_LIBRARIES) 
--- Could NOT find MPREAL (missing: MPREAL_INCLUDES MPREAL_VERSION_OK MPREAL_WORKS) (Required is at least version "1.0.0")
+-- Could NOT find MPFR (missing: MPFR_INCLUDES MPFR_LIBRARIES MPFR_VERSION_OK) (Required is at least version "1.0.0")
 -- Could NOT find FFTW (missing: FFTW_INCLUDES FFTW_LIBRARIES) 
 CMake Warning (dev) at dependencies/eigen-3.4.0/unsupported/test/CMakeLists.txt:293 (find_package):
   Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
@@ -23,6 +23,8 @@ CMake Warning (dev) at dependencies/eigen-3.4.0/unsupported/test/CMakeLists.txt:
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
+CUDA_TOOLKIT_ROOT_DIR not found or specified
+-- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (Required is at least version "7.0")
 -- Found unsuitable Qt version "" from NOTFOUND
 -- Qt4 not found, so disabling the mandelbrot and opengl demos
 -- ************************************************************
@@ -30,8 +32,8 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- ************************************************************
 -- 
 -- Build type:        Debug
--- Build site:        drgnbon
--- Build string:      unknownwin-_-13.2.0-sse2-64bit
+-- Build site:        desktop-l6bqhp9
+-- Build string:      unknownwin-g++-13.1.0-sse2-64bit
 -- Enabled backends:  
 -- Disabled backends: CHOLMOD,  UMFPACK,  KLU,  SuperLU,  PaStiX,  METIS,  SPQR,  Qt4 support,  Boost.Multiprecision,  GoogleHash,  Adolc,  MPFR C++,  fftw,  OpenGL, 
 -- Default order:     Column-major
@@ -57,8 +59,8 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- CUDA:              OFF
 -- HIP:               OFF
 -- 
-CXX:               C:/msys64/mingw64/bin/c++.exe
- CXX_VERSION:       
+CXX:               D:/programs/CLion/bin/mingw/bin/g++.exe
+ CXX_VERSION:       g++.exe (GCC) 13.1.0
  CXX_FLAGS:          -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi
  Sparse lib flags:   
 
@@ -86,6 +88,6 @@ CXX:               C:/msys64/mingw64/bin/c++.exe
 -- uninstall| Remove files installed by the install target
 -- ---------+--------------------------------------------------------------
 -- 
--- Configuring done (4.5s)
--- Generating done (4.8s)
--- Build files have been written to: C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug
+-- Configuring done (5.5s)
+-- Generating done (4.7s)
+-- Build files have been written to: D:/programming/FenDL/cmake-build-debug

@@ -18,6 +18,7 @@ public:
 
   void activateLayer(ActivationFunction* activation_function, Eigen::MatrixXd active_values_previous_layer, Eigen::MatrixXd weights_previous_layer) override;
 
+    void calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,ActivationFunction* activation_function) override;
 
 };
 #endif
