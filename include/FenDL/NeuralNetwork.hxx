@@ -17,7 +17,7 @@ public:
   size_t _size_of_input = 0;
 
   ActivationFunction* _current_activation_function;
-
+  LossFunction* _current_loss_function;
 
 
   NeuralNetwork();
@@ -32,6 +32,11 @@ public:
   {
     _current_activation_function = &selected_activation_function;
   }
+  void setLossFunction(LossFunction& selected_loss_function)
+  {
+      _current_loss_function = &selected_loss_function;
+  }
+
   void forwardFeed()
   {
     for(int i = 1;i < layers.size();++i)
@@ -40,15 +45,18 @@ public:
 
   void backPropogation(Eigen::MatrixXd right_answer)
   {
-    layers[layers.size()-1]->_gradient = 2*(layers[layers.size()-1]->_active_values - right_answer);
-
+    layers[layers.size()-1]->_gradient = _current_loss_function->getDerivationLoss(layers[layers.size()-1]->_active_values,right_answer);
     for(int i = layers.size()-2;i >= 0;--i)
     {
-        layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_gradient,layers[i+1]->_values,_current_activation_function);
-    }
-
+	    layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_gradient,layers[i+1]->_values,_current_activation_function);
+	}
   }
 
+  Eigen::MatrixXd predict(Eigen::MatrixXd input){
+	  layers[0]->_active_values = input;
+	  forwardFeed();
+	  return layers[layers.size()-1]->_active_values;
+  }
 
 
   //creating network with add function
