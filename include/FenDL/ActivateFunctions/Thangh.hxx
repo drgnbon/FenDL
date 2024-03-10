@@ -5,9 +5,13 @@
 
 class Thangh :public  ActivationFunction {
 public:
-    double getActivateValue(double value) override;
+	Thangh();
 
-    Eigen::MatrixXd getActivateMatrix(Eigen::MatrixXd matrix) override;
+	double getActivateValue(double value) override;
+
+	Eigen::MatrixXd getDerivateMatrix(Eigen::MatrixXd matrix) override;
+
+	Eigen::MatrixXd getActivateMatrix(Eigen::MatrixXd matrix) override;
 };
 
 

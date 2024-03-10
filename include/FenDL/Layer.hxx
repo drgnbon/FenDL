@@ -20,11 +20,11 @@ public:
   virtual void calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,ActivationFunction* activation_function) = 0;
 
 
-  Eigen::MatrixXd _weights;
+  Eigen::MatrixXd _weights,_gradient;
   size_t _size_of_output;
   size_t _size_of_input;
   bool _is_last_layer;
-  Eigen::MatrixXd _active_values,_values,_gradient;
+  Eigen::MatrixXd _active_values,_values,_derivation_neurons;
 };
 
 #endif

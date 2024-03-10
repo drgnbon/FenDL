@@ -25,8 +25,9 @@ int main() {
   //std::cout << network.getNetworkInfo();
 
   Sigmoid activation;
+  SquareError loss;
   network.setActivationFunction(activation);
-
+  network.setLossFunction(loss);
   /*network.layers[0]->_active_values(0,0) = 0.6;
   network.layers[0]->_active_values(0,1) = 0.12;
 
@@ -46,9 +47,18 @@ int main() {
 
   std::cout << network.predict(input);
 
+	Eigen::MatrixXd ra(1,5);
+	ra << 1,0,0,0,0;
+
+	network.backPropogation(ra);
+	std::cout << "\n0";
+
+	std::cout << '\n';
+
+	for(auto i:network.layers)std::cout << i->_gradient << "\n\n\n";
 
 
-  system("pause");
+	system("pause");
 
-  return 0;
-}
+	return 0;
+  }

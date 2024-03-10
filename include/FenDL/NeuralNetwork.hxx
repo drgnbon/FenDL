@@ -45,10 +45,10 @@ public:
 
   void backPropogation(Eigen::MatrixXd right_answer)
   {
-    layers[layers.size()-1]->_gradient = _current_loss_function->getDerivationLoss(layers[layers.size()-1]->_active_values,right_answer);
+    layers[layers.size()-1]->_derivation_neurons = _current_loss_function->getDerivationLoss(layers[layers.size()-1]->_active_values,right_answer);
     for(int i = layers.size()-2;i >= 0;--i)
     {
-	    layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_gradient,layers[i+1]->_values,_current_activation_function);
+	    layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_derivation_neurons,layers[i+1]->_values,_current_activation_function);
 	}
   }
 

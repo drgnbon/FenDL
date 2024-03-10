@@ -3,6 +3,7 @@
 
 NeuralNetwork::NeuralNetwork()
 {
+	/*std::cout << "_________"*/
 	Sigmoid* _activation;
 	SquareError* _loss;
 	_current_activation_function = _activation;
