@@ -6,14 +6,19 @@
 int main() {
   NeuralNetwork network;
 
-  //network.setLayers<PerceptronLayer>({2,50000,60000});
+  network.setLayers<PerceptronLayer>({2,5,10,5});
 
-
+  /*
   network.addLayer<PerceptronLayer>(2);
   network.addLayer<PerceptronLayer>(5);
   network.addLayer<PerceptronLayer>(10);
   network.addLayer<PerceptronLayer>(5);
   network.addComplete();
+   */
+
+
+
+
   //network.deleteAllLayers();
 
 

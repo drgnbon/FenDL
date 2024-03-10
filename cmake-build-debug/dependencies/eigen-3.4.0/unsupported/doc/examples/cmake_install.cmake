@@ -1,4 +1,4 @@
-# Install script for directory: D:/programming/FenDL/dependencies/eigen-3.4.0/unsupported/doc/examples
+# Install script for directory: D:/FenDL/dependencies/eigen-3.4.0/unsupported/doc/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/programs/CLion/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
 endif()
 

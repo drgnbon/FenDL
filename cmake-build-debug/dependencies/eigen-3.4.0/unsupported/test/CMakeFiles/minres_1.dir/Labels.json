@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/programming/FenDL/dependencies/eigen-3.4.0/unsupported/test/minres.cpp"
+			"file" : "D:/FenDL/dependencies/eigen-3.4.0/unsupported/test/minres.cpp"
 		}
 	],
 	"target" : 

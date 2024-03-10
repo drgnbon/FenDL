@@ -5,19 +5,19 @@
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
 	"cxx-modules" : {},
-	"dir-cur-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/lapack",
-	"dir-cur-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2/dependencies/eigen-3.4.0/lapack",
-	"dir-top-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug",
-	"dir-top-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2",
+	"dir-cur-bld" : "D:/FenDL/cmake-build-debug/dependencies/eigen-3.4.0/lapack",
+	"dir-cur-src" : "D:/FenDL/dependencies/eigen-3.4.0/lapack",
+	"dir-top-bld" : "D:/FenDL/cmake-build-debug",
+	"dir-top-src" : "D:/FenDL",
 	"exports" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\DrgNBoN\\Desktop\\FenDL 2\\dependencies\\eigen-3.4.0",
-		"C:\\Users\\DrgNBoN\\Desktop\\FenDL 2\\dependencies\\eigen-3.4.0\\lapack\\..\\blas"
+		"D:\\FenDL\\dependencies\\eigen-3.4.0",
+		"D:\\FenDL\\dependencies\\eigen-3.4.0\\lapack\\..\\blas"
 	],
 	"language" : "Fortran",
 	"linked-target-dirs" : [],
-	"module-dir" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/lapack",
+	"module-dir" : "D:/FenDL/cmake-build-debug/dependencies/eigen-3.4.0/lapack",
 	"submodule-ext" : ".smod",
 	"submodule-sep" : "@"
 }

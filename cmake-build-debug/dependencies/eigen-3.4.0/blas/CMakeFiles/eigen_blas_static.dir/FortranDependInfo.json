@@ -5,18 +5,18 @@
 	"compiler-simulate-id" : "",
 	"config" : "Debug",
 	"cxx-modules" : {},
-	"dir-cur-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/blas",
-	"dir-cur-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2/dependencies/eigen-3.4.0/blas",
-	"dir-top-bld" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug",
-	"dir-top-src" : "C:/Users/DrgNBoN/Desktop/FenDL 2",
+	"dir-cur-bld" : "D:/FenDL/cmake-build-debug/dependencies/eigen-3.4.0/blas",
+	"dir-cur-src" : "D:/FenDL/dependencies/eigen-3.4.0/blas",
+	"dir-top-bld" : "D:/FenDL/cmake-build-debug",
+	"dir-top-src" : "D:/FenDL",
 	"exports" : [],
 	"include-dirs" : 
 	[
-		"C:\\Users\\DrgNBoN\\Desktop\\FenDL 2\\dependencies\\eigen-3.4.0"
+		"D:\\FenDL\\dependencies\\eigen-3.4.0"
 	],
 	"language" : "Fortran",
 	"linked-target-dirs" : [],
-	"module-dir" : "C:/Users/DrgNBoN/Desktop/FenDL 2/cmake-build-debug/dependencies/eigen-3.4.0/blas",
+	"module-dir" : "D:/FenDL/cmake-build-debug/dependencies/eigen-3.4.0/blas",
 	"submodule-ext" : ".smod",
 	"submodule-sep" : "@"
 }

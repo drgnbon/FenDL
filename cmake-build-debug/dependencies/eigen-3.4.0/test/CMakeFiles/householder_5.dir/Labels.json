@@ -2,7 +2,7 @@
 	"sources" : 
 	[
 		{
-			"file" : "D:/programming/FenDL/dependencies/eigen-3.4.0/test/householder.cpp"
+			"file" : "D:/FenDL/dependencies/eigen-3.4.0/test/householder.cpp"
 		}
 	],
 	"target" : 

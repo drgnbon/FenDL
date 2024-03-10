@@ -1,8 +1,90 @@
-D:\programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S D:\programming\FenDL -B D:\programming\FenDL\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2023.3.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\FenDL -B D:\FenDL\cmake-build-debug
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/msys64/mingw64/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test EIGEN_COMPILER_SUPPORT_CPP11
+-- Performing Test EIGEN_COMPILER_SUPPORT_CPP11 - Success
 -- Performing Test COMPILER_SUPPORT_std=cpp03
 -- Performing Test COMPILER_SUPPORT_std=cpp03 - Success
+-- Performing Test standard_math_library_linked_to_automatically
+-- Performing Test standard_math_library_linked_to_automatically - Success
 -- Standard libraries to link to explicitly: none
+-- Performing Test COMPILER_SUPPORT_WERROR
+-- Performing Test COMPILER_SUPPORT_WERROR - Success
+-- Performing Test COMPILER_SUPPORT_pedantic
+-- Performing Test COMPILER_SUPPORT_pedantic - Success
+-- Performing Test COMPILER_SUPPORT_Wall
+-- Performing Test COMPILER_SUPPORT_Wall - Success
+-- Performing Test COMPILER_SUPPORT_Wextra
+-- Performing Test COMPILER_SUPPORT_Wextra - Success
+-- Performing Test COMPILER_SUPPORT_Wundef
+-- Performing Test COMPILER_SUPPORT_Wundef - Success
+-- Performing Test COMPILER_SUPPORT_Wcastalign
+-- Performing Test COMPILER_SUPPORT_Wcastalign - Success
+-- Performing Test COMPILER_SUPPORT_Wcharsubscripts
+-- Performing Test COMPILER_SUPPORT_Wcharsubscripts - Success
+-- Performing Test COMPILER_SUPPORT_Wnonvirtualdtor
+-- Performing Test COMPILER_SUPPORT_Wnonvirtualdtor - Success
+-- Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs
+-- Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs - Success
+-- Performing Test COMPILER_SUPPORT_Wpointerarith
+-- Performing Test COMPILER_SUPPORT_Wpointerarith - Success
+-- Performing Test COMPILER_SUPPORT_Wwritestrings
+-- Performing Test COMPILER_SUPPORT_Wwritestrings - Success
+-- Performing Test COMPILER_SUPPORT_Wformatsecurity
+-- Performing Test COMPILER_SUPPORT_Wformatsecurity - Success
+-- Performing Test COMPILER_SUPPORT_Wshorten64to32
+-- Performing Test COMPILER_SUPPORT_Wshorten64to32 - Failed
+-- Performing Test COMPILER_SUPPORT_Wlogicalop
+-- Performing Test COMPILER_SUPPORT_Wlogicalop - Success
+-- Performing Test COMPILER_SUPPORT_Wenumconversion
+-- Performing Test COMPILER_SUPPORT_Wenumconversion - Success
+-- Performing Test COMPILER_SUPPORT_Wcpp11extensions
+-- Performing Test COMPILER_SUPPORT_Wcpp11extensions - Success
+-- Performing Test COMPILER_SUPPORT_Wdoublepromotion
+-- Performing Test COMPILER_SUPPORT_Wdoublepromotion - Success
+-- Performing Test COMPILER_SUPPORT_Wshadow
+-- Performing Test COMPILER_SUPPORT_Wshadow - Success
+-- Performing Test COMPILER_SUPPORT_Wnopsabi
+-- Performing Test COMPILER_SUPPORT_Wnopsabi - Success
+-- Performing Test COMPILER_SUPPORT_Wnovariadicmacros
+-- Performing Test COMPILER_SUPPORT_Wnovariadicmacros - Success
+-- Performing Test COMPILER_SUPPORT_Wnolonglong
+-- Performing Test COMPILER_SUPPORT_Wnolonglong - Success
+-- Performing Test COMPILER_SUPPORT_fnochecknew
+-- Performing Test COMPILER_SUPPORT_fnochecknew - Success
+-- Performing Test COMPILER_SUPPORT_fnocommon
+-- Performing Test COMPILER_SUPPORT_fnocommon - Success
+-- Performing Test COMPILER_SUPPORT_fstrictaliasing
+-- Performing Test COMPILER_SUPPORT_fstrictaliasing - Success
+-- Performing Test COMPILER_SUPPORT_wd981
+-- Performing Test COMPILER_SUPPORT_wd981 - Failed
+-- Performing Test COMPILER_SUPPORT_wd2304
+-- Performing Test COMPILER_SUPPORT_wd2304 - Failed
+-- Performing Test COMPILER_SUPPORT_STRICTANSI
+-- Performing Test COMPILER_SUPPORT_STRICTANSI - Failed
+-- Performing Test COMPILER_SUPPORT_Qunusedarguments
+-- Performing Test COMPILER_SUPPORT_Qunusedarguments - Failed
+-- Performing Test COMPILER_SUPPORT_ansi
+-- Performing Test COMPILER_SUPPORT_ansi - Success
+-- Performing Test COMPILER_SUPPORT_OPENMP
+-- Performing Test COMPILER_SUPPORT_OPENMP - Success
 -- Found unsuitable Qt version "" from NOTFOUND
+-- Looking for a Fortran compiler
+-- Looking for a Fortran compiler - C:/msys64/mingw64/bin/gfortran.exe
+-- The Fortran compiler identification is GNU 13.2.0
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: C:/msys64/mingw64/bin/gfortran.exe - skipped
 -- Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDES CHOLMOD_LIBRARIES) 
 -- Could NOT find UMFPACK (missing: UMFPACK_INCLUDES UMFPACK_LIBRARIES) 
 -- Could NOT find KLU (missing: KLU_INCLUDES KLU_LIBRARIES) 
@@ -11,10 +93,16 @@ D:\programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMA
 -- A version of Pastix has been found but pastix_nompi.h does not exist in the include directory. Because Eigen tests require a version without MPI, we disable the Pastix backend.
 -- Could NOT find SPQR (missing: SPQR_INCLUDES SPQR_LIBRARIES) 
 -- Found unsuitable Qt version "" from NOTFOUND
+-- Performing Test COMPILER_SUPPORT_FASTMATH
+-- Performing Test COMPILER_SUPPORT_FASTMATH - Success
 -- Could NOT find Boost (missing: Boost_INCLUDE_DIR) (Required is at least version "1.53.0")
+-- Found Threads: TRUE  
 -- Could NOT find GoogleHash (missing: GOOGLEHASH_INCLUDES GOOGLEHASH_COMPILE) 
 -- Could NOT find Adolc (missing: ADOLC_INCLUDES ADOLC_LIBRARIES) 
--- Could NOT find MPFR (missing: MPFR_INCLUDES MPFR_LIBRARIES MPFR_VERSION_OK) (Required is at least version "1.0.0")
+-- Found MPFR: C:/msys64/mingw64/include (Required is at least version "1.0.0") 
+-- Found GMP: C:/msys64/mingw64/include  
+-- Could NOT find MPREAL (missing: MPREAL_INCLUDES MPREAL_VERSION_OK MPREAL_WORKS) (Required is at least version "1.0.0")
+-- Found PkgConfig: C:/msys64/mingw64/bin/pkg-config.exe (found version "2.0.3") 
 -- Could NOT find FFTW (missing: FFTW_INCLUDES FFTW_LIBRARIES) 
 CMake Warning (dev) at dependencies/eigen-3.4.0/unsupported/test/CMakeLists.txt:293 (find_package):
   Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
@@ -23,8 +111,7 @@ CMake Warning (dev) at dependencies/eigen-3.4.0/unsupported/test/CMakeLists.txt:
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CUDA_TOOLKIT_ROOT_DIR not found or specified
--- Could NOT find CUDA (missing: CUDA_TOOLKIT_ROOT_DIR CUDA_NVCC_EXECUTABLE CUDA_INCLUDE_DIRS CUDA_CUDART_LIBRARY) (Required is at least version "7.0")
+-- Found CUDA: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3 (found suitable version "12.3", minimum required is "7.0") 
 -- Found unsuitable Qt version "" from NOTFOUND
 -- Qt4 not found, so disabling the mandelbrot and opengl demos
 -- ************************************************************
@@ -32,8 +119,8 @@ CUDA_TOOLKIT_ROOT_DIR not found or specified
 -- ************************************************************
 -- 
 -- Build type:        Debug
--- Build site:        desktop-l6bqhp9
--- Build string:      unknownwin-g++-13.1.0-sse2-64bit
+-- Build site:        DrgNBoN
+-- Build string:      unknownwin-_-13.2.0-sse2-64bit
 -- Enabled backends:  
 -- Disabled backends: CHOLMOD,  UMFPACK,  KLU,  SuperLU,  PaStiX,  METIS,  SPQR,  Qt4 support,  Boost.Multiprecision,  GoogleHash,  Adolc,  MPFR C++,  fftw,  OpenGL, 
 -- Default order:     Column-major
@@ -59,8 +146,8 @@ CUDA_TOOLKIT_ROOT_DIR not found or specified
 -- CUDA:              OFF
 -- HIP:               OFF
 -- 
-CXX:               D:/programs/CLion/bin/mingw/bin/g++.exe
- CXX_VERSION:       g++.exe (GCC) 13.1.0
+CXX:               C:/msys64/mingw64/bin/c++.exe
+ CXX_VERSION:       
  CXX_FLAGS:          -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi
  Sparse lib flags:   
 
@@ -88,6 +175,6 @@ CXX:               D:/programs/CLion/bin/mingw/bin/g++.exe
 -- uninstall| Remove files installed by the install target
 -- ---------+--------------------------------------------------------------
 -- 
--- Configuring done (5.5s)
--- Generating done (4.7s)
--- Build files have been written to: D:/programming/FenDL/cmake-build-debug
+-- Configuring done (33.0s)
+-- Generating done (2.9s)
+-- Build files have been written to: D:/FenDL/cmake-build-debug
