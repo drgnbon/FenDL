@@ -4,6 +4,7 @@
 
 #include <initializer_list>
 #include "Layer.hxx"
+#include "Optimizer.hxx"
 #include <memory>
 #include <vector>
 #include <FenDL/FenDL.hxx>
@@ -18,7 +19,7 @@ public:
 
   ActivationFunction* _current_activation_function;
   LossFunction* _current_loss_function;
-
+  Optimizer* _current_optimizer;
 
   NeuralNetwork();
 
@@ -36,6 +37,10 @@ public:
   {
       _current_loss_function = &selected_loss_function;
   }
+  void setOptimizer(Optimizer& selected_optimizer)
+  {
+	_current_optimizer = &selected_optimizer;
+  }
 
   void forwardFeed()
   {
@@ -50,6 +55,16 @@ public:
     {
 	    layers[i]->calculateDerivation(layers[i]->_weights,layers[i+1]->_derivation_neurons,layers[i+1]->_values,_current_activation_function);
 	}
+  }
+
+  void learn(Eigen::MatrixXd input,Eigen::MatrixXd right_answer,double learning_speed){
+	  layers[0]->_active_values = input;
+	  forwardFeed();
+	  backPropogation(right_answer);
+	  for(int i = 0;i < layers.size();i++){
+		_current_optimizer->updateWeights(layers[i]->_weights,layers[i]->_gradient,learning_speed);
+	  }
+
   }
 
   Eigen::MatrixXd predict(Eigen::MatrixXd input){

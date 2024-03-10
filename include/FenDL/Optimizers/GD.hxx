@@ -7,8 +7,9 @@
 
 #include <FenDL/Optimizer.hxx>
 
-class GD {
-
+class GD : public Optimizer {
+public:
+	void updateWeights(Eigen::MatrixXd& weights,Eigen::MatrixXd& gradient,double ls) override;
 };
 
 

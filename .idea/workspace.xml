@@ -1486,26 +1486,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Prediction">
+    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Gradient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/ActivateFunctions/Thangh.cxx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/ActivateFunctions/Thangh.cxx.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/Layers/PerceptronLayer.cxx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/Layers/PerceptronLayer.cxx.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/LossFunctions/SquareError.cxx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/LossFunctions/SquareError.cxx.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/NeuralNetwork.cxx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FenDL.dir/src/NeuralNetwork.cxx.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Main.dir/Main.cxx.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Main.dir/Main.cxx.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Main.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libFenDL.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libFenDL.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/ActivateFunctions/Thangh.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/ActivateFunctions/Thangh.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Layer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Layer.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ActivateFunctions/Thangh.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActivateFunctions/Thangh.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layers/PerceptronLayer.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layers/PerceptronLayer.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LossFunctions/SquareError.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LossFunctions/SquareError.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NeuralNetwork.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuralNetwork.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Optimizers/GD.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/GD.cxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10405,7 +10392,7 @@
       <workItem from="1709992260054" duration="13364000" />
       <workItem from="1710010979691" duration="4379000" />
       <workItem from="1710066416513" duration="460000" />
-      <workItem from="1710066951313" duration="4538000" />
+      <workItem from="1710066951313" duration="5522000" />
     </task>
     <task id="LOCAL-00001" summary="Prediction">
       <option name="closed" value="true" />
@@ -10415,7 +10402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710068249793</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gradient">
+      <option name="closed" value="true" />
+      <created>1710094763740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710094763740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -10428,6 +10423,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prediction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prediction" />
+    <MESSAGE value="Gradient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradient" />
   </component>
 </project>

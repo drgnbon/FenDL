@@ -26,8 +26,10 @@ int main() {
 
   Sigmoid activation;
   SquareError loss;
+  GD optimizer;
   network.setActivationFunction(activation);
   network.setLossFunction(loss);
+  network.setOptimizer(optimizer);
   /*network.layers[0]->_active_values(0,0) = 0.6;
   network.layers[0]->_active_values(0,1) = 0.12;
 
@@ -55,8 +57,11 @@ int main() {
 
 	std::cout << '\n';
 
-	for(auto i:network.layers)std::cout << i->_gradient << "\n\n\n";
+	//for(auto i:network.layers)std::cout << i->_gradient << "\n\n\n";
 
+	network.learn(input,ra,0.5);
+
+	std::cout << network._current_loss_function->getMediumLoss(network.layers[network.layers.size()-1]->_active_values,ra);
 
 	system("pause");
 

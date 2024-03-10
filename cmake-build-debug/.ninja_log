@@ -41,3 +41,11 @@
 4166	6745	7317978560314881	Main.exe	5c297bedd16e6e7e
 8	3091	7317978700289498	CMakeFiles/Main.dir/Main.cxx.obj	e22ac903ec6cd089
 3091	5539	7317978724715865	Main.exe	5c297bedd16e6e7e
+20	4934	7317989368088973	CMakeFiles/FenDL.dir/src/Optimizers/BFGS.cxx.obj	1c0b194bbe2b0ed9
+30	5191	7317989370831720	CMakeFiles/FenDL.dir/src/Optimizers/GD.cxx.obj	50d49ec5d03e15d8
+8	5333	7317989372287865	CMakeFiles/FenDL.dir/src/NeuralNetworks/FunctionalModel.cxx.obj	c7c7b50a0e9629c0
+14	5480	7317989373739535	CMakeFiles/FenDL.dir/src/NeuralNetworks/SequentionalModel.cxx.obj	739e9ddd85fdb347
+25	5509	7317989374039580	CMakeFiles/FenDL.dir/src/NeuralNetwork.cxx.obj	a5a93354a0a0ce48
+38	5879	7317989377733152	CMakeFiles/Main.dir/Main.cxx.obj	e22ac903ec6cd089
+5509	6909	7317989388037119	libFenDL.a	aca9989877b960f9
+6909	9445	7317989413346306	Main.exe	5c297bedd16e6e7e
