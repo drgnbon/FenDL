@@ -2,7 +2,6 @@
 #define FENDL_ACTIVATIONFUNCTION_HXX
 
 
-
 #include "Eigen/Core"
 
 

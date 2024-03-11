@@ -27,13 +27,13 @@ void PerceptronLayer::buildWeightsForLayer(size_t size_of_output)
 }
 
 
-void PerceptronLayer::activateLayer(ActivationFunction* activation_function,Eigen::MatrixXd active_values_previous_layer,Eigen::MatrixXd weights_previous_layer)
+void PerceptronLayer::activateLayer(std::shared_ptr<ActivationFunction> activation_function,Eigen::MatrixXd active_values_previous_layer,Eigen::MatrixXd weights_previous_layer)
 {
   _values = active_values_previous_layer * weights_previous_layer;
   _active_values = activation_function->getActivateMatrix(_values);
 }
 
-void PerceptronLayer::calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,ActivationFunction* activation_function)
+void PerceptronLayer::calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,std::shared_ptr<ActivationFunction> activation_function)
 {
     _derivation_neurons = Eigen::MatrixXd( derivation_next_layer.array() * activation_function->getDerivateMatrix(values_next_layer).array()    ) * weights_this_layer.transpose();
 	_gradient = (_active_values.transpose() * Eigen::MatrixXd(derivation_next_layer.array() * activation_function->getDerivateMatrix(values_next_layer).array()));

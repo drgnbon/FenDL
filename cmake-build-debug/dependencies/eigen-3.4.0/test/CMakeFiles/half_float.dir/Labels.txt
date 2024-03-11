@@ -1,4 +1,0 @@
-# Target labels
- BuildOfficial
-# Source files and their labels
-D:/programming/FenDl2/dependencies/eigen-3.4.0/test/half_float.cpp
