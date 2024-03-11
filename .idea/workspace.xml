@@ -1489,10 +1489,12 @@
     <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Gradient">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/FenDL/Layer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Layer.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/FenDL/Layers/PerceptronLayer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Layers/PerceptronLayer.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimizers/GD.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/GD.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ActivateFunctions/Sigmoid.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActivateFunctions/Sigmoid.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layers/PerceptronLayer.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layers/PerceptronLayer.cxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LossFunctions/SquareError.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LossFunctions/SquareError.cxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1506,6 +1508,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -1539,7 +1542,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/programming/FenDl2/dependencies&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/programming/FenDl2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -1555,6 +1558,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.Main">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BVH" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="BVH" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -2006,11 +2014,6 @@
       </method>
     </configuration>
     <configuration name="Tutorial_simple_example_fixed_size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="Tutorial_simple_example_fixed_size" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="Tutorial_simple_example_fixed_size">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>

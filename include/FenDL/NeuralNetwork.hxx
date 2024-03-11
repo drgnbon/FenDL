@@ -94,7 +94,7 @@ public:
         _layers[_layers.size()-1]->_derivation_neurons = _current_loss_function->getDerivationLoss(_layers[_layers.size()-1]->_active_values,std::move(right_answer));
         for(long long i = _layers.size()-2;i >= 0;--i)
         {
-	        _layers[i]->calculateDerivation(_layers[i]->_weights,_layers[i+1]->_derivation_neurons,_layers[i+1]->_values,_current_activation_function);
+	        _layers[i]->calculateDerivation(_layers[i]->_weights,_layers[i+1]->_derivation_neurons,_layers[i+1]->_values,_layers[i]->_active_values,_current_activation_function);
 	    }
     }
 
