@@ -1,16 +1,16 @@
-#ifndef FENDL_FENDL_HXX
-#define FENDL_FENDL_HXX
+#ifndef FENDL_CONFIG_HXX
+#define FENDL_CONFIG_HXX
 
 
-//для Андрея это зависимости для main это подключать ток в main
+//для Андрея это конфиг для самой либы это подключать ток в network;
+
+//FenDl.hxx и этот файл должны быть идентичны на данном этапе, но нельзя путать подключение
 
 #include <FenDL/Optimizer.hxx>
-#include <FenDL/Layer.hxx>
 #include <FenDL/ActivateFunction.hxx>
 #include <FenDL/LossFunction.hxx>
+#include <FenDL/Layer.hxx>
 
-#include <FenDL/NeuralNetworks/FunctionalModel.hxx>
-#include <FenDL/NeuralNetworks/SequentionalModel.hxx>
 #include <FenDL/Optimizers/ADAM.hxx>
 #include <FenDL/Optimizers/BFGS.hxx>
 #include <FenDL/Optimizers/GD.hxx>
