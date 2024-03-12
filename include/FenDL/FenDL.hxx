@@ -16,6 +16,7 @@
 #include <FenDL/Optimizers/GD.hxx>
 #include <FenDL/ActivateFunctions/Sigmoid.hxx>
 #include <FenDL/ActivateFunctions/Thangh.hxx>
+#include <FenDL/ActivateFunctions/RELU.hxx>
 #include <FenDL/LossFunctions/SquareError.hxx>
 #include <FenDL/Layers/PerceptronLayer.hxx>
 

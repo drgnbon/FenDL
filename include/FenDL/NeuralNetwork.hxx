@@ -11,7 +11,7 @@
 class NeuralNetwork
 {
 public:
-    std::vector<std::shared_ptr<Layer>> _layers;
+    std::vector<std::shared_ptr<Layer> > _layers;
     std::shared_ptr<ActivationFunction> _current_activation_function;
     std::shared_ptr<LossFunction> _current_loss_function;
     std::shared_ptr<Optimizer> _current_optimizer;
@@ -70,7 +70,7 @@ public:
             ++it;
         }
         int last = *it;
-        _layers.push_back(std::make_shared<LayerType>(last, 0, false));
+        _layers.push_back(std::make_shared<LayerType>(last, 0, true));
     }
 
     //delete all layers_______________________________________________________________
@@ -92,7 +92,8 @@ public:
     void backPropogation(Eigen::MatrixXd right_answer)
     {
         _layers[_layers.size()-1]->_derivation_neurons = _current_loss_function->getDerivationLoss(_layers[_layers.size()-1]->_active_values,std::move(right_answer));
-        for(long long i = _layers.size()-2;i >= 0;--i)
+        std::cout << (_layers[_layers.size()-1]->_derivation_neurons).squaredNorm() << " ";
+		for(long long i = _layers.size()-2;i >= 0;--i)
         {
 	        _layers[i]->calculateDerivation(_layers[i]->_weights,_layers[i+1]->_derivation_neurons,_layers[i+1]->_values,_layers[i]->_active_values,_current_activation_function);
 	    }
@@ -100,16 +101,16 @@ public:
 
     //predict___________________________________________________________________________
     Eigen::MatrixXd predict(Eigen::MatrixXd input){
-        _layers[0]->_active_values = std::move(input);
+        _layers[0]->_active_values = input;
         forwardFeed();
         return _layers[_layers.size()-1]->_active_values;
     }
 
     //сомнительно но okay
     void learn(Eigen::MatrixXd input,Eigen::MatrixXd right_answer,double learning_speed){
-	      _layers[0]->_active_values = std::move(input);
+	      _layers[0]->_active_values = input;
 	      forwardFeed();
-	      backPropogation(std::move(right_answer));
+	      backPropogation(right_answer);
 	      for(int i = 0;i < _layers.size()-1;i++){
 	    	 _current_optimizer->updateWeights(_layers[i]->_weights,_layers[i]->_gradient,learning_speed);
 	      }

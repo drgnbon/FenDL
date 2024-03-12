@@ -7,8 +7,6 @@ PerceptronLayer::PerceptronLayer(size_t size_of_input, size_t size_of_output,boo
 	  _weights = Eigen::MatrixXd::Random(size_of_input,size_of_output);
 	  _gradient = Eigen::MatrixXd::Zero(size_of_input,size_of_output);
   }
-
-
   _active_values = Eigen::MatrixXd::Zero(1,size_of_input);
   _values = Eigen::MatrixXd::Zero(1,size_of_input);
   _derivation_neurons = Eigen::MatrixXd::Zero(1,size_of_input);

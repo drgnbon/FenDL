@@ -13,6 +13,7 @@ set(FenDL_public_headers
   ${FenDL_headers_dir}/ActivateFunction.hxx
   ${FenDL_headers_dir}/ActivateFunctions/Sigmoid.hxx
   ${FenDL_headers_dir}/ActivateFunctions/Thangh.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/RELU.hxx
 
   ${FenDL_headers_dir}/Layer.hxx
   ${FenDL_headers_dir}/Layers/PerceptronLayer.hxx
@@ -40,6 +41,7 @@ set(FenDL_public_headers
 set(FenDL_sources
   ${FenDL_sources_dir}/ActivateFunctions/Sigmoid.cxx
   ${FenDL_sources_dir}/ActivateFunctions/Thangh.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/RELU.cxx
 
   ${FenDL_sources_dir}/Layers/PerceptronLayer.cxx
 
