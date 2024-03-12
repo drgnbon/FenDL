@@ -2,11 +2,11 @@
 
 double Thangh::getActivateValue(double value) {
 
-	return  (exp(value) - exp(-value))/(exp(value) + exp(-value))  ;
+	return  ( exp(value) - exp(-value) ) / (exp(value) + exp(-value) )  ;
 }
 
 double Thangh::getDerivateValue(double value){
-	return 1 - pow(getActivateValue(value),2);
+	return 1 - getActivateValue(value)*getActivateValue(value);
 }
 
 

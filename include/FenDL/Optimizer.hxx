@@ -6,7 +6,7 @@
 class Optimizer
 {
 public:
-	virtual void updateWeights(Eigen::MatrixXd& weights,Eigen::MatrixXd gradient,double ls) = 0;
+	virtual void updateWeights(Eigen::MatrixXd& weights,Eigen::MatrixXd& gradient,double ls) = 0;
 };
 
 #endif

@@ -51,8 +51,7 @@ public:
     }
     void addComplete() const
     {
-        if (_layers.size() < 2)
-            return;
+        if (_layers.size() < 2) return;
         for(int i = 0;i < _layers.size()-1;++i)
             _layers[i]->buildWeightsForLayer(_layers[i+1]->_size_of_input);
     }
@@ -88,16 +87,19 @@ public:
         }
     }
 
-    //basic back propogation___________________________________________________________________________
-    void backPropogation(Eigen::MatrixXd right_answer)
-    {
-        _layers[_layers.size()-1]->_derivation_neurons = _current_loss_function->getDerivationLoss(_layers[_layers.size()-1]->_active_values,std::move(right_answer));
-        std::cout << (_layers[_layers.size()-1]->_derivation_neurons).squaredNorm() << " ";
-		for(long long i = _layers.size()-2;i >= 0;--i)
-        {
-	        _layers[i]->calculateDerivation(_layers[i]->_weights,_layers[i+1]->_derivation_neurons,_layers[i+1]->_values,_layers[i]->_active_values,_current_activation_function);
-	    }
-    }
+
+
+
+	//basic back propogation___________________________________________________________________________
+	void backPropogation(Eigen::MatrixXd& right_answer)
+	{
+		_layers[_layers.size()-1]->_derivation_neurons = _current_loss_function->getDerivationLoss(_layers[_layers.size()-1]->_active_values, right_answer);
+
+		for(long long i = _layers.size()-2; i >= 0; --i)
+		{
+			_layers[i]->calculateDerivation(_layers[i]->_weights, _layers[i+1]->_derivation_neurons, _layers[i+1]->_values, _layers[i]->_active_values, _current_activation_function);
+		}
+	}
 
     //predict___________________________________________________________________________
     Eigen::MatrixXd predict(Eigen::MatrixXd input){
@@ -112,7 +114,8 @@ public:
 	      forwardFeed();
 	      backPropogation(right_answer);
 	      for(int i = 0;i < _layers.size()-1;i++){
-	    	 _current_optimizer->updateWeights(_layers[i]->_weights,_layers[i]->_gradient,learning_speed);
+	    	 //_current_optimizer->updateWeights(_layers[i]->_weights,_layers[i]->_gradient,learning_speed);
+		      _layers[i]->_weights -= learning_speed*_layers[i]->_gradient;
 	      }
     }
 
