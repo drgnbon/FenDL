@@ -14,10 +14,10 @@ int main() {
 
 
   Eigen::MatrixXd input;
-  input = Eigen::MatrixXd::Constant(1,5000,0.5);
+  input = Eigen::MatrixXd::Random(1,5000);
 
   Eigen::MatrixXd answer;
-  answer = Eigen::MatrixXd::Constant(1,3,0.25);
+  answer = Eigen::MatrixXd::Random(1,3);
 
   int t = 0;
 
