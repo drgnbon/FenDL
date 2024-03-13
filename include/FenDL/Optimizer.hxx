@@ -8,9 +8,7 @@ typedef Eigen::MatrixXd Matrixd;
 class Optimizer
 {
 public:
-    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,double ls) = 0;
-
-    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,double ls,int epoch) = 0;
+    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,double ls = 0.5,double epoch = 1.0) = 0;
 
 protected:
     double _gamma = 0.9;

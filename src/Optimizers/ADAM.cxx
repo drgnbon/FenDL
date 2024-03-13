@@ -1,6 +1,6 @@
 #include "FenDL/Optimizers/ADAM.hxx"
 
-void ADAM::updateWeights(Matrixd &weights, Matrixd& gradient, double ls,int epoch) {
+void ADAM::updateWeights(Matrixd& weights,Matrixd& gradient,double ls,double epoch) {
     Matrixd speed = weights;
     Matrixd moment = weights;
     Matrixd speed_m = weights;
