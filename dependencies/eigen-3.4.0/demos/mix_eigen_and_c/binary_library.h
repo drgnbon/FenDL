@@ -23,7 +23,7 @@ extern "C"
   struct C_Map_MatrixXd {};
 
   // the C_MatrixXd class, wraps some of the functionality
-  // of Eigen::MatrixXd.
+  // of Matrixd.
   struct C_MatrixXd* MatrixXd_new(int rows, int cols);
   void    MatrixXd_delete     (struct C_MatrixXd *m);
   double* MatrixXd_data       (struct C_MatrixXd *m);

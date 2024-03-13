@@ -6,9 +6,9 @@
 class SquareError : public LossFunction
 {
 public:
-  double getMediumLoss(Eigen::MatrixXd active_value,Eigen::MatrixXd right_answer) override;
+  double getMediumLoss(Matrixd active_value,Matrixd right_answer) override;
 
-  Eigen::MatrixXd getDerivationLoss(Eigen::MatrixXd active_value,Eigen::MatrixXd right_answer) override;
+  Matrixd getDerivationLoss(Matrixd active_value,Matrixd right_answer) override;
 };
 
 #endif

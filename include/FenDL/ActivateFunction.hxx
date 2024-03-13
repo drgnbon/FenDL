@@ -4,6 +4,8 @@
 
 #include "Eigen/Core"
 
+typedef Eigen::MatrixXd Matrixd;
+
 
 class ActivationFunction
 {
@@ -15,7 +17,7 @@ public:
   virtual double getActivateValue(double value) = 0;
   virtual double getDerivateValue(double value) = 0;
 
-  Eigen::MatrixXd getActivateMatrix(Eigen::MatrixXd matrix) {
+  Matrixd getActivateMatrix(Matrixd matrix) {
 	  for (int i = 0; i < matrix.rows(); ++i) {
 		  for (int j = 0; j < matrix.cols(); ++j) {
 			  matrix(i, j) = getActivateValue(matrix(i, j));
@@ -24,7 +26,7 @@ public:
 	  return matrix;
   }
 
-  Eigen::MatrixXd getDerivateMatrix(Eigen::MatrixXd matrix) {
+  Matrixd getDerivateMatrix(Matrixd matrix) {
 	  for (int i = 0; i < matrix.rows(); ++i) {
 		  for (int j = 0; j < matrix.cols(); ++j) {
 			  matrix(i, j) = getDerivateValue(matrix(i, j));

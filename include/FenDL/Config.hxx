@@ -10,6 +10,7 @@
 #include <FenDL/ActivateFunction.hxx>
 #include <FenDL/LossFunction.hxx>
 #include <FenDL/Layer.hxx>
+#include <FenDL/NeuralNetwork.hxx>
 
 #include <FenDL/Optimizers/ADAM.hxx>
 #include <FenDL/Optimizers/BFGS.hxx>
@@ -18,6 +19,10 @@
 #include <FenDL/ActivateFunctions/Thangh.hxx>
 #include <FenDL/LossFunctions/SquareError.hxx>
 #include <FenDL/Layers/PerceptronLayer.hxx>
+
+//typedef Eigen::MatrixXd Matrixd;
+//typedef Eigen::MatrixXf Matrixf;
+//typedef Eigen::MatrixXi Matrixi;
 
 
 #endif

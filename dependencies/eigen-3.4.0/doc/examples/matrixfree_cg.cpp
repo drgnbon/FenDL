@@ -82,7 +82,7 @@ namespace internal {
 int main()
 {
   int n = 10;
-  Eigen::SparseMatrix<double> S = Eigen::MatrixXd::Random(n,n).sparseView(0.5,1);
+  Eigen::SparseMatrix<double> S = Matrixd::Random(n,n).sparseView(0.5,1);
   S = S.transpose()*S;
 
   MatrixReplacement A;

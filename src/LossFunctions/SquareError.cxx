@@ -1,7 +1,7 @@
 #include "FenDL/LossFunctions/SquareError.hxx"
 
 #include <iostream>
-double SquareError::getMediumLoss(Eigen::MatrixXd active_value,Eigen::MatrixXd right_answer)
+double SquareError::getMediumLoss(Matrixd active_value,Matrixd right_answer)
 {
     double SquareError = 0;
     for (int i = 0; i < active_value.rows(); ++i)
@@ -11,7 +11,7 @@ double SquareError::getMediumLoss(Eigen::MatrixXd active_value,Eigen::MatrixXd r
 }
 
 
-Eigen::MatrixXd SquareError::getDerivationLoss(Eigen::MatrixXd active_value,Eigen::MatrixXd right_answer)
+Matrixd SquareError::getDerivationLoss(Matrixd active_value,Matrixd right_answer)
 {
 	return  2*(active_value-right_answer);
 }

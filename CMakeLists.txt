@@ -35,7 +35,9 @@ set(FenDL_public_headers
   ${FenDL_headers_dir}/FenDL.hxx
 
   ${FenDL_headers_dir}/Config.hxx
-        
+  ${FenDL_headers_dir}/TrainerStrategy.hxx
+  ${FenDL_headers_dir}/Branch.hxx
+
 )
 
 set(FenDL_sources
@@ -57,6 +59,9 @@ set(FenDL_sources
   ${FenDL_sources_dir}/Optimizers/GD.cxx
 
   ${FenDL_sources_dir}/NeuralNetwork.cxx
+
+  ${FenDL_sources_dir}/TrainerStrategy.cxx
+  ${FenDL_sources_dir}/Branch.cxx
 )
 
 add_library(FenDL ${FenDL_public_headers} ${FenDL_sources})

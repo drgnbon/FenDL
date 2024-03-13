@@ -16,9 +16,9 @@ public:
 
   void buildWeightsForLayer(size_t size_of_output) override;
 
-  void activateLayer(std::shared_ptr<ActivationFunction> activation_function, Eigen::MatrixXd active_values_previous_layer, Eigen::MatrixXd weights_previous_layer) override;
+  void activateLayer(std::shared_ptr<ActivationFunction> activation_function, Matrixd active_values_previous_layer, Matrixd weights_previous_layer) override;
 
-  void calculateDerivation(Eigen::MatrixXd weights_this_layer,Eigen::MatrixXd derivation_next_layer,Eigen::MatrixXd values_next_layer,Eigen::MatrixXd _active_values_this_layer,std::shared_ptr<ActivationFunction> activation_function) override;
+  void calculateDerivation(Matrixd weights_this_layer,Matrixd derivation_next_layer,Matrixd values_next_layer,Matrixd _active_values_this_layer,std::shared_ptr<ActivationFunction> activation_function) override;
 
 };
 #endif
