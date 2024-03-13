@@ -1486,15 +1486,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="TrainerStrategy">
+    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Optimizers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizers/ADAM.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizers/ADAM.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Optimizers/ADAM.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/ADAM.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimizers/GD.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/GD.cxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainerStrategy.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainerStrategy.cxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10458,7 +10453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710351623993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Optimizers">
+      <option name="closed" value="true" />
+      <created>1710353697527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710353697527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -10474,7 +10477,8 @@
     <MESSAGE value="Gradient" />
     <MESSAGE value="Branches full" />
     <MESSAGE value="TrainerStrategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="TrainerStrategy" />
+    <MESSAGE value="Optimizers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimizers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,17 +3,20 @@
 TrainerStrategy::TrainerStrategy() {
     _optimizer = std::make_shared<GD>();
     _loss_function = std::make_shared<SquareError>();
+    _epoch = 0;
 }
 
 TrainerStrategy::TrainerStrategy(std::shared_ptr<Optimizer> optimizer) {
     _optimizer = optimizer;
     _loss_function = std::make_shared<SquareError>();
+    _epoch = 0;
 }
 
 TrainerStrategy::TrainerStrategy(std::shared_ptr<Optimizer> optimizer ,std::shared_ptr<LossFunction> lossFunction)
 {
     _optimizer = optimizer;
     _loss_function = lossFunction;
+    _epoch = 0;
 }
 
 void TrainerStrategy::backPropogation(NeuralNetwork& network , Matrixd right_answer){
@@ -31,9 +34,10 @@ void TrainerStrategy::train(NeuralNetwork& network,Matrixd input,Matrixd answer,
     network.forwardPropogation();
     backPropogation(network,answer);
     for(int i = 0;i <  network._layers.size()-1;i++){
-        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,learning_speed);
+        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,learning_speed,_epoch);
     }
     if(logging)std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n";
+    _epoch++;
 }
 
 

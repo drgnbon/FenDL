@@ -11,7 +11,7 @@ typedef Eigen::MatrixXd Matrixd;
 class TrainerStrategy {
 public:
 
-
+    double _epoch;
 
     std::shared_ptr<Optimizer> _optimizer;
     std::shared_ptr<LossFunction> _loss_function;
