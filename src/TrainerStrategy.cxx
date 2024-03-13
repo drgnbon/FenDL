@@ -31,3 +31,28 @@ void TrainerStrategy::train(NeuralNetwork& network,Matrixd input,Matrixd answer,
     }
     if(logging)std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n";
 }
+
+void TrainerStrategy::train(NeuralNetwork& network,Matrixd input,Matrixd answer,double learning_speed)
+{
+    bool logging = false;
+    network.setInputLayer(input);
+    network.forwardPropogation();
+    backPropogation(network,answer);
+    for(int i = 0;i <  network._layers.size()-1;i++){
+        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,learning_speed);
+    }
+    if(logging)std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n";
+}
+
+void TrainerStrategy::train(NeuralNetwork& network,Matrixd input,Matrixd answer)
+{
+    double learning_speed = 1;
+    bool logging = false;
+    network.setInputLayer(input);
+    network.forwardPropogation();
+    backPropogation(network,answer);
+    for(int i = 0;i <  network._layers.size()-1;i++){
+        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,learning_speed);
+    }
+    if(logging)std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n";
+}

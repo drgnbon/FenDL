@@ -1486,14 +1486,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Branches full">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Branch.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Branch.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Branch.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Branch.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NeuralNetwork.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuralNetwork.cxx" afterDir="false" />
+    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="TrainerStrategy">
       <change beforePath="$PROJECT_DIR$/src/TrainerStrategy.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainerStrategy.cxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10433,7 +10426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710341498520</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TrainerStrategy">
+      <option name="closed" value="true" />
+      <created>1710350994569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710350994569</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -10448,7 +10449,8 @@
     <MESSAGE value="Prediction" />
     <MESSAGE value="Gradient" />
     <MESSAGE value="Branches full" />
-    <option name="LAST_COMMIT_MESSAGE" value="Branches full" />
+    <MESSAGE value="TrainerStrategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="TrainerStrategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
