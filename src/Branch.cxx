@@ -114,7 +114,7 @@ void Branch::addTestToBranch(const std::vector<double>& input, const std::vector
     _targetsv.push_back(target);
 }
 
-void Branch::compileBranch()
+void Branch::buildBranch()
 {
     _inputs = new Matrixd[_count_of_tests];
     _targets = new Matrixd[_count_of_tests];

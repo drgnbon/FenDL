@@ -15,7 +15,6 @@ public:
     std::vector<std::shared_ptr<Layer> > _layers;
     std::shared_ptr<ActivationFunction> _current_activation_function;
     std::shared_ptr<LossFunction> _current_loss_function;
-    std::shared_ptr<Optimizer> _current_optimizer;
 
     NeuralNetwork();
     ~NeuralNetwork();
@@ -23,7 +22,6 @@ public:
     //set options
     void setActivationFunction(std::shared_ptr<ActivationFunction> selected_activation_function);
     void setLossFunction(std::shared_ptr<LossFunction> selected_loss_function);
-    void setOptimizer(std::shared_ptr<Optimizer> selected_optimizer);
 
     //creating network with add function
     template<typename LayerType>
@@ -61,14 +59,8 @@ public:
     //basic forward feed
     void forwardPropogation();
 
-	//basic back propogation
-	void backPropogation(Matrixd& right_answer);
-
     //predict
     Matrixd predict(Matrixd input);
-
-    //learning
-    void learn(Matrixd input,Matrixd right_answer,double learning_speed);
 
 
 };

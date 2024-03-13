@@ -30,7 +30,7 @@ public:
 
     void addTestToBranch(const std::vector<double>& input, const std::vector<double>& target);
 
-    void compileBranch();
+    void buildBranch();
 
     void clearBranch();
 
