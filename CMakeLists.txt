@@ -12,8 +12,23 @@ set(FenDL_public_headers
 
   ${FenDL_headers_dir}/ActivateFunction.hxx
   ${FenDL_headers_dir}/ActivateFunctions/Sigmoid.hxx
-  ${FenDL_headers_dir}/ActivateFunctions/Thangh.hxx
-  ${FenDL_headers_dir}/ActivateFunctions/RELU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Th.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/ReLU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Linear.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Arctg.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Softsign.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/ISRU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/LReLU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/ELU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/SELU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/ISRLU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/SoftPlus.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Benti.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/SiLU.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Sin.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Sinc.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Gh.hxx
+  ${FenDL_headers_dir}/ActivateFunctions/Arctg.hxx
 
   ${FenDL_headers_dir}/Layer.hxx
   ${FenDL_headers_dir}/Layers/PerceptronLayer.hxx
@@ -41,9 +56,7 @@ set(FenDL_public_headers
 )
 
 set(FenDL_sources
-  ${FenDL_sources_dir}/ActivateFunctions/Sigmoid.cxx
-  ${FenDL_sources_dir}/ActivateFunctions/Thangh.cxx
-  ${FenDL_sources_dir}/ActivateFunctions/RELU.cxx
+
 
   ${FenDL_sources_dir}/Layers/PerceptronLayer.cxx
 
@@ -62,6 +75,26 @@ set(FenDL_sources
 
   ${FenDL_sources_dir}/TrainerStrategy.cxx
   ${FenDL_sources_dir}/Branch.cxx
+
+  ${FenDL_sources_dir}/ActivateFunctions/Sigmoid.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Th.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/ReLU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Linear.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Arctg.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Softsign.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/ISRU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/LReLU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/ELU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/SELU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/ISRLU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/SoftPlus.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Benti.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/SiLU.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Sin.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Sinc.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Gh.cxx
+  ${FenDL_sources_dir}/ActivateFunctions/Arctg.cxx
+
 )
 
 add_library(FenDL ${FenDL_public_headers} ${FenDL_sources})

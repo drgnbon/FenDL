@@ -1,5 +1,4 @@
 #include "FenDL/ActivateFunctions/Sigmoid.hxx"
-#include <iostream>
 
 double Sigmoid::getActivateValue(double value) {
     return 1.0 / (1.0 + exp(-value) );

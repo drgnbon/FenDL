@@ -3,6 +3,7 @@
 
 
 #include "Eigen/Core"
+#include <cmath>
 
 typedef Eigen::MatrixXd Matrixd;
 

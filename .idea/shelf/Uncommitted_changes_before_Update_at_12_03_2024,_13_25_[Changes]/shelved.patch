@@ -1,0 +1,343 @@
+Index: .idea/FenDL.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/FenDL.iml b/.idea/FenDL.iml
+new file mode 100644
+--- /dev/null	(date 1710239120271)
++++ b/.idea/FenDL.iml	(date 1710239120271)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1710239120303)
++++ b/.idea/modules.xml	(date 1710239120303)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/FenDL.iml" filepath="$PROJECT_DIR$/.idea/FenDL.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f3adbf992e2df38ca7ea10b7673d30707aa168b5)
++++ b/.idea/workspace.xml	(date 1710239155289)
+@@ -1487,12 +1487,30 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Gradient">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizer.hxx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Optimizers/GD.hxx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Optimizers/GD.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/GD.cxx" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/Eigen/src/misc/lapacke.h" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/Eigen/src/misc/lapacke.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/bench_multi_compilers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/bench_multi_compilers.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/bench_unrolling" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/bench_unrolling" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/benchmark_suite" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/benchmark_suite" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/go_mean" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/go_mean" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/mk_new_gnuplot.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/mk_new_gnuplot.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/smooth_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/data/smooth_all.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/generic_bench/timers/portable_timer.hh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/btl/generic_bench/timers/portable_timer.hh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/make_plot.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/make_plot.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/run.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/runall.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/perf_monitoring/runall.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/tensors/eigen_sycl_bench.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/bench/tensors/eigen_sycl_bench.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/blas/testing/runblastest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/blas/testing/runblastest.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/debug/msvc/eigen.natvis" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/debug/msvc/eigen.natvis" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/debug/msvc/eigen_autoexp_part.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/debug/msvc/eigen_autoexp_part.dat" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/check.in" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/check.in" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/debug.in" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/debug.in" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/eigen_monitor_perf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/eigen_monitor_perf.sh" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/release.in" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/scripts/release.in" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/CXX11/src/Tensor/TensorContractionSycl.h" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/CXX11/src/Tensor/TensorContractionSycl.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/src/IterativeSolvers/IDRS.h" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies/eigen-3.4.0/unsupported/Eigen/src/IterativeSolvers/IDRS.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ActivateFunctions/Sigmoid.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActivateFunctions/Sigmoid.cxx" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -1523,31 +1541,31 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+-    &quot;CMake Application.FenDL.executor&quot;: &quot;Run&quot;,
+-    &quot;CMake Application.Main.executor&quot;: &quot;Run&quot;,
+-    &quot;CMake Debug.FenDL.executor&quot;: &quot;Debug&quot;,
+-    &quot;CMake Debug.Project.executor&quot;: &quot;Debug&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+-    &quot;cf.advertisement.text.overridden&quot;: &quot;true&quot;,
+-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;D:/programming/FenDl2/dependencies&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
++    "CMake Application.FenDL.executor": "Run",
++    "CMake Application.Main.executor": "Run",
++    "CMake Debug.FenDL.executor": "Debug",
++    "CMake Debug.Project.executor": "Debug",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.cidr.known.project.marker": "true",
++    "RunOnceActivity.readMode.enableVisualFormatting": "true",
++    "cf.advertisement.text.overridden": "true",
++    "cf.first.check.clang-format": "false",
++    "cidr.known.project.marker": "true",
++    "git-widget-placeholder": "master",
++    "ignore.virus.scanning.warn.message": "true",
++    "last_opened_file_path": "/home/drgnbon/GitHub/FenDL",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="D:\programming\FenDl2\dependencies" />
+@@ -1555,6 +1573,11 @@
+     </key>
+   </component>
+   <component name="RunManager" selected="CMake Application.Main">
++    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
++      <method v="2">
++        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="BVH" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="BVH" CONFIG_NAME="Debug">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+@@ -2006,11 +2029,6 @@
+       </method>
+     </configuration>
+     <configuration name="Tutorial_simple_example_fixed_size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="Tutorial_simple_example_fixed_size" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="Tutorial_simple_example_fixed_size">
+-      <method v="2">
+-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+       </method>
+@@ -8161,6 +8179,11 @@
+       </method>
+     </configuration>
+     <configuration name="sparseqr_2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="sparseqr_2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="sparseqr_2">
++      <method v="2">
++        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="spbenchsolver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="spbenchsolver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="spbenchsolver">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+       </method>
+@@ -8226,6 +8249,11 @@
+       </method>
+     </configuration>
+     <configuration name="splines" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="splines" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="splines">
++      <method v="2">
++        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="spsolver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="spsolver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="spsolver">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+       </method>
+@@ -8535,6 +8563,11 @@
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="test_sparseLU" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="test_sparseLU" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="test_sparseLU">
++      <method v="2">
++        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="transpose_nonconst_ctor_on_const_xpr_ko" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="transpose_nonconst_ctor_on_const_xpr_ko" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="transpose_nonconst_ctor_on_const_xpr_ko">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+@@ -8929,6 +8962,9 @@
+       <item itemvalue="CMake Application.NightlyTest" />
+       <item itemvalue="CMake Application.NightlyUpdate" />
+       <item itemvalue="CMake Application.uninstall" />
++      <item itemvalue="CMake Application.spbenchsolver" />
++      <item itemvalue="CMake Application.spsolver" />
++      <item itemvalue="CMake Application.test_sparseLU" />
+       <item itemvalue="CMake Application.blas" />
+       <item itemvalue="CMake Application.eigen_blas" />
+       <item itemvalue="CMake Application.eigen_blas_static" />
+@@ -10393,6 +10429,7 @@
+       <workItem from="1710010979691" duration="4379000" />
+       <workItem from="1710066416513" duration="460000" />
+       <workItem from="1710066951313" duration="5522000" />
++      <workItem from="1710239117069" duration="5000" />
+     </task>
+     <task id="LOCAL-00001" summary="Prediction">
+       <option name="closed" value="true" />
+Index: Main.cxx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include <iostream>\n#include <Eigen/Eigen>\n#include <FenDL/FenDL.hxx>\n\n\nint main() {\n  NeuralNetwork network;\n  network.setLayers<PerceptronLayer>({2000,1000,2});\n\n  Eigen::MatrixXd input;\n  input = Eigen::MatrixXd::Random(1,2000);\n\n  Eigen::MatrixXd answer(1,2);\n  answer << 0.1,0.5;\n\n\n\n\n\n  while(true)\n  {\n      network._layers[0]->_active_values = input;\n      //network.forwardFeed();\n      network.learn(input,answer,0.05);\n      std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << \"\\n\\n\\n\";\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  }
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Main.cxx b/Main.cxx
+--- a/Main.cxx	(revision f3adbf992e2df38ca7ea10b7673d30707aa168b5)
++++ b/Main.cxx	(date 1710165498019)
+@@ -2,41 +2,34 @@
+ #include <Eigen/Eigen>
+ #include <FenDL/FenDL.hxx>
+ 
+-
+-int main() {
++int main()
++{
+   NeuralNetwork network;
+-  network.setLayers<PerceptronLayer>({2000,1000,2});
++  network.setLayers<PerceptronLayer>({20, 1000, 2});
+ 
+   Eigen::MatrixXd input;
+-  input = Eigen::MatrixXd::Random(1,2000);
++  input = Eigen::MatrixXd::Random(1, 20);
+ 
+-  Eigen::MatrixXd answer(1,2);
+-  answer << 0.1,0.5;
++  Eigen::MatrixXd answer(1, 2);
++  answer << 0.1, 0.5;
+ 
+-
+-
+-
+-
+-  while(true)
++  while (true)
+   {
+-      network._layers[0]->_active_values = input;
+-      //network.forwardFeed();
+-      network.learn(input,answer,0.05);
+-      std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n\n\n";
++    network._layers[0]->_active_values = input;
++    // network.forwardFeed();
++    network.learn(input, answer, 0.0000005);
++    std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size() - 1]->_active_values, answer) << "\n\n\n";
+   }
+ 
+-
+-
+-
+-
+-
+-
++  /*
++  Sigmoid cocker;
+ 
++  Eigen::MatrixXd sample = Eigen::MatrixXd::Random(5, 5);
+ 
++  std::cout << sample << "\n\n\n";
+ 
++  std::cout << network._current_activation_function->getDerivateMatrix(sample) << "\n\n\n\n\n\n";
+ 
+-
+-
+-
+-
+-  }
+\ No newline at end of file
++  std::cout << cocker.getActivateMatrix(sample);
++  */
++}
+\ No newline at end of file
+Index: src/ActivateFunctions/Sigmoid.cxx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include \"FenDL/ActivateFunctions/Sigmoid.hxx\"\n#include <iostream>\n\ndouble Sigmoid::getActivateValue(double value) {\n\n    return 1.0 / (1.0 + exp(-value));\n}\n\nEigen::MatrixXd Sigmoid::getActivateMatrix(Eigen::MatrixXd matrix) {\n  for (int i = 0; i < matrix.rows(); ++i) {\n    for (int j = 0; j < matrix.cols(); ++j) {\n      matrix(i, j) = 1.0 / (1.0 + exp(-matrix(i, j)));\n    }\n  }\n  return matrix;\n}\nSigmoid::Sigmoid(){};\n\n\nEigen::MatrixXd Sigmoid::getDerivateMatrix(Eigen::MatrixXd matrix) {\n    for (int i = 0; i < matrix.rows(); ++i) {\n        for (int j = 0; j < matrix.cols(); ++j) {\n            double x = getActivateValue(matrix(i,j));\n            matrix(i, j) = x / (1.0 - x);\n        }\n    }\n    return matrix;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ActivateFunctions/Sigmoid.cxx b/src/ActivateFunctions/Sigmoid.cxx
+--- a/src/ActivateFunctions/Sigmoid.cxx	(revision f3adbf992e2df38ca7ea10b7673d30707aa168b5)
++++ b/src/ActivateFunctions/Sigmoid.cxx	(date 1710165465025)
+@@ -1,14 +1,18 @@
+ #include "FenDL/ActivateFunctions/Sigmoid.hxx"
+ #include <iostream>
+ 
+-double Sigmoid::getActivateValue(double value) {
++double Sigmoid::getActivateValue(double value)
++{
+ 
+-    return 1.0 / (1.0 + exp(-value));
++  return 1.0 / (1.0 + exp(-value));
+ }
+ 
+-Eigen::MatrixXd Sigmoid::getActivateMatrix(Eigen::MatrixXd matrix) {
+-  for (int i = 0; i < matrix.rows(); ++i) {
+-    for (int j = 0; j < matrix.cols(); ++j) {
++Eigen::MatrixXd Sigmoid::getActivateMatrix(Eigen::MatrixXd matrix)
++{
++  for (int i = 0; i < matrix.rows(); ++i)
++  {
++    for (int j = 0; j < matrix.cols(); ++j)
++    {
+       matrix(i, j) = 1.0 / (1.0 + exp(-matrix(i, j)));
+     }
+   }
+@@ -16,13 +20,16 @@
+ }
+ Sigmoid::Sigmoid(){};
+ 
++Eigen::MatrixXd Sigmoid::getDerivateMatrix(Eigen::MatrixXd matrix)
++{
++  for (int i = 0; i < matrix.rows(); ++i)
++  {
++    for (int j = 0; j < matrix.cols(); ++j)
++    {
+ 
+-Eigen::MatrixXd Sigmoid::getDerivateMatrix(Eigen::MatrixXd matrix) {
+-    for (int i = 0; i < matrix.rows(); ++i) {
+-        for (int j = 0; j < matrix.cols(); ++j) {
+-            double x = getActivateValue(matrix(i,j));
+-            matrix(i, j) = x / (1.0 - x);
+-        }
+-    }
+-    return matrix;
++      double x = getActivateValue(matrix(i, j));
++      matrix(i, j) = x / (1.0 - x);
++    }
++  }
++  return matrix;
+ }
+\ No newline at end of file
