@@ -5,7 +5,7 @@
 int main() {
 
   NeuralNetwork network;
-  TrainerStrategy ts(std::make_shared<ADAM>());
+  TrainerStrategy ts(std::make_shared<GD>());
   network.setLayers<PerceptronLayer>({5,100,3});
   network.setActivationFunction(std::make_shared<Sigmoid>());
 
@@ -15,7 +15,7 @@ int main() {
   Matrixd output;
 
   input.setRandom(1,5);
-  output.setRandom(1,3);
+  output.setConstant(1,3,0);
 
   while(t < 100000){
 

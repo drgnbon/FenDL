@@ -1488,9 +1488,6 @@
   <component name="ChangeListManager">
     <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Optimizers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Optimizers/ADAM.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Optimizers/ADAM.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrainerStrategy.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainerStrategy.cxx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2012,11 +2009,6 @@
       </method>
     </configuration>
     <configuration name="Tutorial_simple_example_fixed_size" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FenDL" TARGET_NAME="Tutorial_simple_example_fixed_size" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FenDL" RUN_TARGET_NAME="Tutorial_simple_example_fixed_size">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -10404,6 +10396,7 @@
       <workItem from="1710275428428" duration="31040000" />
       <workItem from="1710337499502" duration="2112000" />
       <workItem from="1710341131556" duration="964000" />
+      <workItem from="1710426348354" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Prediction">
       <option name="closed" value="true" />
@@ -10461,7 +10454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710353697527</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Optimizers">
+      <option name="closed" value="true" />
+      <created>1710354957984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710354957984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
