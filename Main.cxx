@@ -1,36 +1,17 @@
-#include <iostream>
-#include <Eigen/Dense>
 #include <FenDL/FenDL.hxx>
 
 int main() {
-  srand(time(NULL));
   NeuralNetwork network;
-  network.setLayers<PerceptronLayer>({500,20,3});
-  network.setActivationFunction(std::make_shared<Sinc>());
+  network.setLayers<PerceptronLayer>({50000,10000,3});
+  network.setActivationFunction<Sinc>();
 
+  TrainerStrategy trainer(network);
+  trainer.setLossFunction<SquareError>();
+  trainer.setOptimizer<ADAM>(network);
 
+  Branch branch(50000,3);
+  branch.generateRandomBranch(10,0.5,0.9);
+  branch.buildBranch();
 
-  TrainerStrategy ts(network,std::make_shared<ADAM>(network),std::make_shared<SquareError>());
-
-  int t = 0;
-
-  Matrixd input;
-  Matrixd output(1,3);
-
-  input.setRandom(1,500);
-  output << 0.2,0.1,0.1;
-
-
-  while(t < 10000000){
-
-      t++;
-      std::cout << t << " : ";
-
-      ts.train(input,output,0.00005,false);
-
-      std::cout << network._current_loss_function -> getMediumLoss(network._layers[network._layers.size()-1]->_active_values,output) << " \n" ;
-      //std::cin.get();
-  }
-
-  //std::cin.get();
+  trainer.fit(branch,100000,0.00005,true);
 }

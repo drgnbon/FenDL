@@ -3,6 +3,7 @@
 
 
 #include <FenDL/Optimizer.hxx>
+#include <FenDL/Branch.hxx>
 #include <FenDL/NeuralNetwork.hxx>
 #include <FenDL/Optimizers/GD.hxx>
 #include <FenDL/Optimizers/ADAM.hxx>
@@ -13,27 +14,46 @@ typedef Eigen::MatrixXd Matrixd;
 class TrainerStrategy {
 public:
 
-    TrainerStrategy(NeuralNetwork& network,std::shared_ptr<Optimizer> optimizer,std::shared_ptr<LossFunction> loss_function):
-        _network{network},
-        _optimizer{optimizer},
-        _loss_function{loss_function},
-        _epoch{0}{};
-
-    TrainerStrategy(NeuralNetwork& network):
-        _network{network},
-        _optimizer{std::make_shared<GD>(network)},
-        _loss_function{std::make_shared<SquareError>()},
-        _epoch{0}{};
+    explicit TrainerStrategy(NeuralNetwork& network):
+            _network{network},
+            _optimizer{std::make_shared<GD>(network)},
+            _loss_function{std::make_shared<SquareError>()},
+            _epoch{0}{};
 
 
+    template<typename Optimizator>
+    typename std::enable_if<std::is_base_of<Optimizer, Optimizator>::value>::type
+    setOptimizer(NeuralNetwork& network)
+    {
+        _optimizer = std::make_shared<Optimizator>(network);
+    }
+
+
+    template<typename Function>
+    typename std::enable_if<std::is_base_of<LossFunction, Function>::value>::type
+    setLossFunction()
+    {
+        _loss_function = std::make_shared<Function>();
+    }
 
     void backPropogation( Matrixd right_answer);
-    void train(Matrixd& input,Matrixd& answer,double learning_speed,bool logging);
 
+
+
+    void fit(Matrixd& input,Matrixd& answer,double learning_speed,bool logging);
+
+    void fit(Branch branch,int epochs,double learning_speed,bool logging);
+
+
+
+
+
+public:
+    std::shared_ptr<LossFunction> _loss_function;
 private:
     double _epoch;
     std::shared_ptr<Optimizer> _optimizer;
-    std::shared_ptr<LossFunction> _loss_function;
+
     NeuralNetwork& _network;
 };
 
