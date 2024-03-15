@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Eigen/Dense>
 
-using Matrixd;
+using Eigen::MatrixXd;
 
 int main()
 {

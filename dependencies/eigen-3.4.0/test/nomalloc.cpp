@@ -157,7 +157,7 @@ void ctms_decompositions()
 
 void test_zerosized() {
   // default constructors:
-  Matrixd A;
+  Eigen::MatrixXd A;
   Eigen::VectorXd v;
   // explicit zero-sized:
   Eigen::ArrayXXd A0(0,0);
@@ -205,7 +205,7 @@ template<typename MatrixType> void test_reference(const MatrixType& m) {
 EIGEN_DECLARE_TEST(nomalloc)
 {
   // create some dynamic objects
-  Matrixd M1 = MatrixXd::Random(3,3);
+  Eigen::MatrixXd M1 = MatrixXd::Random(3,3);
   Ref<const MatrixXd> R1 = 2.0*M1; // Ref requires temporary
 
   // from here on prohibit malloc:

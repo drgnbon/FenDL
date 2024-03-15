@@ -77,7 +77,7 @@ void product_large_regressions()
   }
 
   {
-    Matrixd A(10,10), B, C;
+    Eigen::MatrixXd A(10,10), B, C;
     A.setRandom();
     C = A;
     for(int k=0; k<79; ++k)

@@ -4,8 +4,19 @@
 #include <FenDL/Optimizer.hxx>
 
 class ADAM : public Optimizer{
-    void updateWeights(Matrixd& weights,Matrixd& gradient,double ls,double epoch) override;
+
+private:
+    double _gamma = 0.9;
+    double _alfa =  0.999;
+    double _epsilon = 1e-8;
+
+    std::map<const Matrixd* , Matrixd> _history_speed;
+    std::map<int, Matrixd> _history_moment;
+
+    void updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls,double epoch) override;
 };
 
 
-#endif //FENDL_ADAM_HXX
+#endif
+
+

@@ -2,22 +2,26 @@
 #define FENDL_OPTIMIZER_HXX
 
 #include "Eigen/Core"
+#include <map>
 
 typedef Eigen::MatrixXd Matrixd;
 
 class Optimizer
 {
 public:
-    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,double ls = 0.5,double epoch = 1.0) = 0;
+    //virtual ~Optimizer();
+
+
+    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls = 0.5,double epoch = 1.0) = 0;
 
 protected:
-    double _gamma = 0.9;
-    double _alfa =  0.999;
-    double _epsilon = 1e-8;
+
 
 
 private:
 
 };
+
+
 
 #endif

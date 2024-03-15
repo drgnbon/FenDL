@@ -5,7 +5,7 @@
 
 class GD : public Optimizer {
 public:
-	void updateWeights(Matrixd& weights,Matrixd& gradient,double ls ,double epoch) override;
+	void updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls ,double epoch) override;
 
 
 };

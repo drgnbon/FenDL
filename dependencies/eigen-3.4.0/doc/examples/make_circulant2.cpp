@@ -45,7 +45,7 @@ int main()
 {
   Eigen::VectorXd vec(4);
   vec << 1, 2, 4, 8;
-  Matrixd mat;
+  Eigen::MatrixXd mat;
   mat = makeCirculant(vec);
   std::cout << mat << std::endl;
 }

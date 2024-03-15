@@ -35,7 +35,7 @@ void bug1150()
   // regression for bug 1150
   for(int N = 1; N<20; ++N)
   {
-    Matrixd b( N, N );
+    Eigen::MatrixXd b( N, N );
     b.setOnes();
 
     Eigen::SparseMatrix<double> m( N, N );

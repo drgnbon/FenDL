@@ -34,7 +34,7 @@ void TrainerStrategy::train(NeuralNetwork& network,Matrixd input,Matrixd answer,
     network.forwardPropogation();
     backPropogation(network,answer);
     for(int i = 0;i <  network._layers.size()-1;i++){
-        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,learning_speed,_epoch);
+        _optimizer->updateWeights(network._layers[i]->_weights,network._layers[i]->_gradient,i,learning_speed,_epoch);
     }
     if(logging)std::cout << network._current_loss_function->getMediumLoss(network._layers[network._layers.size()-1]->_active_values,answer) << "\n";
     _epoch++;

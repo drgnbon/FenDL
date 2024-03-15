@@ -35,6 +35,8 @@ public:
             _layers[i]->buildWeightsForLayer(_layers[i+1]->_size_of_input);
     }
 
+    void activateLayer(int number_of_layer);
+
     //creating network initializer_list
     template<typename LayerType>
     void setLayers(std::initializer_list<int> structure) {
@@ -60,7 +62,7 @@ public:
     void forwardPropogation();
 
     //predict
-    Matrixd predict(Matrixd input);
+    Matrixd predict(Matrixd& input);
 
 
 };

@@ -28,6 +28,12 @@ void NeuralNetwork::setInputLayer(Matrixd input)
     _layers[0]->_active_values = input;
 }
 
+
+void NeuralNetwork::activateLayer(int number_of_layer)
+{
+
+}
+
 void NeuralNetwork::forwardPropogation()
 {
     for(long long i = 1;i < _layers.size();++i)
@@ -36,7 +42,7 @@ void NeuralNetwork::forwardPropogation()
     }
 }
 
-Matrixd NeuralNetwork::predict(Matrixd input){
+Matrixd NeuralNetwork::predict(Matrixd& input){
     _layers[0]->_active_values = input;
     forwardPropogation();
     return _layers[_layers.size()-1]->_active_values;
