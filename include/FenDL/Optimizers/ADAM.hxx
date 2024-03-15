@@ -7,6 +7,8 @@ class ADAM : public Optimizer{
 public:
     explicit ADAM(NeuralNetwork& network);
     ~ADAM();
+    void updateWeights(Matrixd answer,std::shared_ptr<LossFunction> _loss_function,
+                       double learning_speed,double epoch) override;
 
 private:
     double _gamma = 0.9;
@@ -15,7 +17,7 @@ private:
     Matrixd*  _history_speed;
     Matrixd* _history_moment;
 
-    void updateWeights(double ls,double epoch) override;
+
 };
 
 

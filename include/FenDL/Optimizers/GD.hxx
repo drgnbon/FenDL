@@ -7,7 +7,8 @@ class GD : public Optimizer {
 public:
 
     explicit GD(NeuralNetwork& network);
-	void updateWeights(double learning_speed ,double epoch) override;
+    void updateWeights(Matrixd answer,std::shared_ptr<LossFunction> _loss_function,
+                       double learning_speed,double epoch) override;
 
 
 };

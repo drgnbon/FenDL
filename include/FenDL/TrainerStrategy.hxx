@@ -36,7 +36,7 @@ public:
         _loss_function = std::make_shared<Function>();
     }
 
-    void backPropogation( Matrixd right_answer);
+
 
 
 
