@@ -1,23 +1,31 @@
 #include "FenDL/Optimizers/ADAM.hxx"
 #include <iostream>
-void ADAM::updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls,double epoch) {
+void ADAM::updateWeights(double ls = 0.5,double epoch = 1) {
+    for(int i = 0;i <  _network._layers.size()-1;i++)
+    {
+        _history_speed[i] = (_gamma * _history_speed[i]) + (1 - _gamma) * _network._layers[i]->_gradient;
+        _history_moment[i]= (_alfa * _history_moment[i]) + Eigen::MatrixXd((1 - _alfa) * _network._layers[i]->_gradient.array().pow(2));
+        _network._layers[i]->_weights -= ls * Eigen::MatrixXd((_history_speed[i] / (1 - pow(_gamma, epoch + 1))).array().cwiseQuotient((_history_moment[i] / (1 - pow(_alfa, epoch + 1))).array().sqrt() + _epsilon).array());
+    }
+}
 
+ADAM::ADAM(NeuralNetwork &network) : Optimizer(network)
+{
+    _history_speed = new Matrixd[network._layers.size()];
+    _history_moment = new Matrixd[network._layers.size()];
 
-
-    Matrixd& speed = _history_speed[number_of_layer];
-    Matrixd& moment = _history_moment[number_of_layer];
-
-    if (speed.size() == 0 || moment.size() == 0) {
-        moment.resize(weights.rows(), weights.cols());
-        speed.resize(weights.rows(), weights.cols());
-        moment.setZero();
-        speed.setZero();
+    for(int i  =0;i < network._layers.size();++i)
+    {
+        _history_speed[i] = network._layers[i]->_weights;
+        _history_moment[i] = network._layers[i]->_weights;
+        _history_speed[i].setZero();
+        _history_moment[i].setZero();
     }
 
-
-    speed = (_gamma * speed) + (1 - _gamma) * gradient;
-    moment = (_alfa * moment) + Eigen::MatrixXd((1 - _alfa) * gradient.array().pow(2));
-
-    weights -= ls * Eigen::MatrixXd((speed / (1 - pow(_gamma, epoch + 1))).array().cwiseQuotient((moment / (1 - pow(_alfa, epoch + 1))).array().sqrt() + _epsilon).array());
-
 }
+
+ADAM::~ADAM() {
+    delete[] _history_speed;
+    delete[] _history_moment;
+}
+

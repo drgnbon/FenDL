@@ -4,16 +4,18 @@
 #include <FenDL/Optimizer.hxx>
 
 class ADAM : public Optimizer{
+public:
+    explicit ADAM(NeuralNetwork& network);
+    ~ADAM();
 
 private:
     double _gamma = 0.9;
     double _alfa =  0.999;
     double _epsilon = 1e-8;
+    Matrixd*  _history_speed;
+    Matrixd* _history_moment;
 
-    std::map<const Matrixd* , Matrixd> _history_speed;
-    std::map<int, Matrixd> _history_moment;
-
-    void updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls,double epoch) override;
+    void updateWeights(double ls,double epoch) override;
 };
 
 

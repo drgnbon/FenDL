@@ -3,24 +3,23 @@
 
 #include "Eigen/Core"
 #include <map>
+#include <FenDL/NeuralNetwork.hxx>
+
 
 typedef Eigen::MatrixXd Matrixd;
 
 class Optimizer
 {
 public:
-    //virtual ~Optimizer();
+    explicit Optimizer(NeuralNetwork& network):_network{network}{};
+    virtual void updateWeights(double ls,double epoch) = 0;
 
-
-    virtual void updateWeights(Matrixd& weights,Matrixd& gradient,int number_of_layer,double ls = 0.5,double epoch = 1.0) = 0;
 
 protected:
-
-
-
-private:
+    NeuralNetwork& _network;
 
 };
+
 
 
 

@@ -48,6 +48,12 @@ Matrixd NeuralNetwork::predict(Matrixd& input){
     return _layers[_layers.size()-1]->_active_values;
 }
 
+std::vector<size_t> NeuralNetwork::returnNetworkStructure() {
+
+
+    return std::vector<size_t>();
+}
+
 
 
 

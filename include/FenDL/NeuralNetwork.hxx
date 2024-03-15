@@ -61,6 +61,9 @@ public:
     //basic forward feed
     void forwardPropogation();
 
+
+    std::vector<size_t> returnNetworkStructure();
+
     //predict
     Matrixd predict(Matrixd& input);
 

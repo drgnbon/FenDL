@@ -3,12 +3,14 @@
 #include <FenDL/FenDL.hxx>
 
 int main() {
-    //Sinc
-
+  srand(time(NULL));
   NeuralNetwork network;
-  TrainerStrategy ts(std::make_shared<ADAM>());
-  network.setLayers<PerceptronLayer>({500,2000,3});
+  network.setLayers<PerceptronLayer>({500,20,3});
   network.setActivationFunction(std::make_shared<Sinc>());
+
+
+
+  TrainerStrategy ts(network,std::make_shared<ADAM>(network),std::make_shared<SquareError>());
 
   int t = 0;
 
@@ -24,7 +26,7 @@ int main() {
       t++;
       std::cout << t << " : ";
 
-      ts.train(network,input,output,0.005,false);
+      ts.train(input,output,0.00005,false);
 
       std::cout << network._current_loss_function -> getMediumLoss(network._layers[network._layers.size()-1]->_active_values,output) << " \n" ;
       //std::cin.get();
