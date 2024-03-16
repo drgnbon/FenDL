@@ -59,7 +59,7 @@ set(FenDL_public_headers
   ${FenDL_headers_dir}/Config.hxx
   ${FenDL_headers_dir}/TrainerStrategy.hxx
   ${FenDL_headers_dir}/Branch.hxx
-
+  ${FenDL_headers_dir}/Optimizers/Adagrad.hxx
 )
 
 set(FenDL_sources
@@ -102,6 +102,8 @@ set(FenDL_sources
   ${FenDL_sources_dir}/ActivateFunctions/Gh.cxx
   ${FenDL_sources_dir}/ActivateFunctions/Arctg.cxx
   ${FenDL_sources_dir}/Optimizer.cxx
+  ${FenDL_sources_dir}/Optimizers/Adagrad.cxx
+
 )
 
 add_library(FenDL ${FenDL_public_headers} ${FenDL_sources})

@@ -16,6 +16,8 @@
 #include <FenDL/Optimizers/ADAM.hxx>
 #include <FenDL/Optimizers/BFGS.hxx>
 #include <FenDL/Optimizers/GD.hxx>
+#include <FenDL/Optimizers/Adagrad.hxx>
+
 
 #include <FenDL/LossFunctions/SquareError.hxx>
 #include <FenDL/Layers/PerceptronLayer.hxx>
