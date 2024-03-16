@@ -29,6 +29,12 @@ void TrainerStrategy::fit(Branch branch,int count_of_epochs, double learning_spe
     }
 }
 
+void TrainerStrategy::setHyperparameters(double alfa, double gamma, double epsilon)
+{
+    _optimizer->_epsilon = epsilon;
+    _optimizer->_gamma = gamma;
+    _optimizer->_alfa = alfa;
+}
 
 
 

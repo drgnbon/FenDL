@@ -60,6 +60,8 @@ set(FenDL_public_headers
   ${FenDL_headers_dir}/TrainerStrategy.hxx
   ${FenDL_headers_dir}/Branch.hxx
   ${FenDL_headers_dir}/Optimizers/Adagrad.hxx
+  ${FenDL_headers_dir}/Optimizers/Adadelta.hxx
+  ${FenDL_headers_dir}/Optimizers/RMSProp.hxx
 )
 
 set(FenDL_sources
@@ -103,6 +105,8 @@ set(FenDL_sources
   ${FenDL_sources_dir}/ActivateFunctions/Arctg.cxx
   ${FenDL_sources_dir}/Optimizer.cxx
   ${FenDL_sources_dir}/Optimizers/Adagrad.cxx
+  ${FenDL_sources_dir}/Optimizers/Adadelta.cxx
+  ${FenDL_sources_dir}/Optimizers/RMSProp.cxx
 
 )
 

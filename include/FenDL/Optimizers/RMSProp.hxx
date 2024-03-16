@@ -1,21 +1,17 @@
-#ifndef FENDL_ADAM_HXX
-#define FENDL_ADAM_HXX
+#ifndef FENDL_RMSPROP_HXX
+#define FENDL_RMSPROP_HXX
 
 #include <FenDL/Optimizer.hxx>
 
-class ADAM : public Optimizer{
+class RMSProp : public Optimizer{
 public:
-    explicit ADAM(NeuralNetwork& network);
-    ~ADAM();
+    explicit RMSProp(NeuralNetwork& network);
+    ~RMSProp();
     void updateWeights(Matrixd answer,std::shared_ptr<LossFunction> _loss_function,
                        double learning_speed,double epoch) override;
-
 private:
-    Matrixd*  _history_speed;
-    Matrixd* _history_moment;
+    Matrixd* _squared_gradient;
 };
 
 
 #endif
-
-

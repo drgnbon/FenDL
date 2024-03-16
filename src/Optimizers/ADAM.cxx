@@ -13,6 +13,9 @@ ADAM::ADAM(NeuralNetwork &network) : Optimizer(network)
 {
     _history_speed = new Matrixd[network._layers.size()];
     _history_moment = new Matrixd[network._layers.size()];
+    _gamma = 0.9;
+    _alfa =  0.999;
+    _epsilon = 1e-8;
 
     for(int i  =0;i < network._layers.size();++i)
     {

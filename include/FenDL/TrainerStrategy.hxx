@@ -38,7 +38,7 @@ public:
 
 
 
-
+    void setHyperparameters(double alfa,double gamma,double epsilon);
 
     void fit(Matrixd& input,Matrixd& answer,double learning_speed,bool logging);
 
