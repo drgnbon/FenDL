@@ -24,5 +24,4 @@ void RMSProp::updateWeights(Matrixd answer, std::shared_ptr<LossFunction> _loss_
 
         _network._layers[i]->_weights -= Matrixd ((_network._layers[i]->_gradient*learning_speed).array() / sqrt(_squared_gradient[i].array() +_epsilon));
     }
-
 }

@@ -12,8 +12,6 @@ public:
                        double learning_speed,double epoch) override;
 
 private:
-    double _beta = 0.9;
-    double _epsilon = 1e-8;
     Matrixd* _squared_gradient;
     Matrixd* _squared_updates;
 };

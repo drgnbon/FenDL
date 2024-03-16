@@ -2,6 +2,8 @@
 
 Adadelta::Adadelta(NeuralNetwork &network) : Optimizer(network)
 {
+    _gamma = 0.9;
+    _epsilon = 1e-8;
     _squared_gradient = new Matrixd[network._layers.size()];
     _squared_updates = new Matrixd[network._layers.size()];
     for(int i  =0;i < network._layers.size();++i)
@@ -11,37 +13,24 @@ Adadelta::Adadelta(NeuralNetwork &network) : Optimizer(network)
         _squared_updates[i].setZero();
         _squared_gradient[i].setZero();
     }
-
 }
 
 void Adadelta::updateWeights(Matrixd answer, std::shared_ptr <LossFunction> _loss_function, double learning_speed,double epoch)
 {
-    for(int i = 0;i < _network._layers.size();++i)
+    for(int i = 0; i < _network._layers.size(); ++i)
     {
+        _squared_gradient[i] = _gamma * _squared_gradient[i].array() + (1 - _gamma) * _network._layers[i]->_gradient.array().square();
 
-        _squared_gradient[i] =_network._layers[i]->_gradient.array().square();
+        Matrixd delta = ((_squared_updates[i].array() + _epsilon).sqrt() / (_squared_gradient[i].array() + _epsilon).sqrt()) * _network._layers[i]->_gradient.array();
 
+        _squared_updates[i] = _gamma * _squared_updates[i].array() + (1 - _gamma) * delta.array().square();
 
-        if(epoch == 0) {
-            _squared_updates[i] = _squared_gradient[i];
-        } else {
-            _squared_updates[i] = _beta * _squared_updates[i] + (1 - _beta) * _squared_gradient[i];
-        }
-
-
-
-        _network._layers[i]->_weights -= Matrixd((sqrt(_squared_gradient[i].array()+_epsilon).array() * _network._layers[i]->_gradient.array()).array()/
-                                                 sqrt(_squared_updates[i].array()+_epsilon).array());
-
-
+        _network._layers[i]->_weights -= delta;
     }
-
-
 }
 
 Adadelta::~Adadelta()
 {
     delete[] _squared_gradient;
     delete[] _squared_updates;
-
 }
