@@ -101,7 +101,7 @@ set(FenDL_sources
   ${FenDL_sources_dir}/ActivateFunctions/Sinc.cxx
   ${FenDL_sources_dir}/ActivateFunctions/Gh.cxx
   ${FenDL_sources_dir}/ActivateFunctions/Arctg.cxx
-
+  ${FenDL_sources_dir}/Optimizer.cxx
 )
 
 add_library(FenDL ${FenDL_public_headers} ${FenDL_sources})

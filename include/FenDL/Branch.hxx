@@ -39,7 +39,6 @@ public:
 private:
     std::string _name_branches_directory = "Branches";
 
-
     size_t _input_layer_size;
     size_t _output_layer_size;
 
