@@ -55,6 +55,7 @@ set(FenDL_public_headers
   ${FenDL_headers_dir}/Optimizers/GD.hxx
 
   ${FenDL_headers_dir}/FenDL.hxx
+  ${FenDL_headers_dir}/Logging.hxx
 
   ${FenDL_headers_dir}/Config.hxx
   ${FenDL_headers_dir}/TrainerStrategy.hxx
@@ -81,6 +82,7 @@ set(FenDL_sources
   ${FenDL_sources_dir}/Optimizers/GD.cxx
 
   ${FenDL_sources_dir}/NeuralNetwork.cxx
+  ${FenDL_sources_dir}/Logging.cxx
 
   ${FenDL_sources_dir}/TrainerStrategy.cxx
   ${FenDL_sources_dir}/Branch.cxx

@@ -1,4 +1,5 @@
 #include "FenDL/NeuralNetwork.hxx"
+#include <fstream>
 
 NeuralNetwork::NeuralNetwork()
 {
@@ -39,6 +40,30 @@ Matrixd NeuralNetwork::predict(Matrixd& input){
     return _layers[_layers.size()-1]->_active_values;
 }
 
+void NeuralNetwork::SaveNeuralNetworkData(std::string path)
+{
+    std::ofstream fs(path);
+    if (fs.is_open())
+        for (int i = 0; i < _layers.size(); ++i)
+            fs << _layers[i]->_weights << "\n\n";
+    fs.close();
+}
 
-
-
+void NeuralNetwork::LoadNeuralNetworkData(std::string path)
+{
+    std::ifstream fs(path);
+    if (fs.is_open())
+    {
+        for (int i = 0; i < _layers.size(); ++i)
+        {
+            for (int j = 0; j < _layers[i]->_weights.rows(); ++j)
+            {
+                for (int k = 0; k < _layers[i]->_weights.cols(); ++k)
+                {
+                    fs >> _layers[i]->_weights(j, k);
+                }
+            }
+        }
+    }
+    fs.close();
+}

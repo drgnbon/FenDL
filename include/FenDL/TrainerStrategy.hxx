@@ -45,29 +45,20 @@ public:
 
     void fit(Branch branch,int epochs,double learning_speed,bool logging,double epsilon = 1e-8);
 
-    double getPercent(Matrixd answer,double epsilon){
-        double percent = 0;
-        for(int i = 0;i < answer.rows();i++){
-            for(int j = 0;j < answer.cols();j++){
-                if(abs(_network._layers[_network._layers.size()-1]->_active_values(i,j) - answer(i,j)) > epsilon)
-                    percent++;
-            }
-        }
-        return  100.0*percent/double(answer.size());
-    }
+    double getPercent(Matrixd answer,double epsilon);
 
     double _average_loss,
             _average_percentage,_time_for_branch,
             _time_for_test,_error_decreeding_speed,_learning_speed;
     int _test_number,_epoch,_branch_size;
-
+    bool _save_weights;
     std::shared_ptr<LossFunction> _loss_function;
-
+    NeuralNetwork& _network;
 private:
 
     std::shared_ptr<Optimizer> _optimizer;
 
-    NeuralNetwork& _network;
+
 };
 
 

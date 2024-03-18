@@ -17,7 +17,7 @@ void TrainerStrategy::fit(Matrixd& input,Matrixd& answer,double learning_speed =
 
 void TrainerStrategy::fit(Branch branch,int count_of_epochs, double learning_speed, bool logging,double epsilon)
 {
-
+    _save_weights = false;
     _average_loss = 0;
     _average_percentage = 0;
 
@@ -31,6 +31,7 @@ void TrainerStrategy::fit(Branch branch,int count_of_epochs, double learning_spe
 
         for(_test_number = 0;_test_number < branch._count_of_tests;++_test_number)
         {
+
             auto time_for_test = clock();
 
             _network.setInputLayer(branch._inputs[_test_number]);
@@ -59,6 +60,15 @@ void TrainerStrategy::setHyperparameters(double alfa, double gamma, double epsil
     _optimizer->_alfa = alfa;
 }
 
-
+double TrainerStrategy::getPercent(Matrixd answer,double epsilon){
+    double percent = 0;
+    for(int i = 0;i < answer.rows();i++){
+        for(int j = 0;j < answer.cols();j++){
+            if(abs(_network._layers[_network._layers.size()-1]->_active_values(i,j) - answer(i,j)) > epsilon)
+                percent++;
+        }
+    }
+    return  100.0*percent/double(answer.size());
+}
 
 

@@ -11,8 +11,6 @@ int main() {
   trainer.setOptimizer<ADAM>(network);
   //trainer.setHyperparameters(0.999,0.9,1e-8);
 
-
-
   Logging log;
   log.startLogging(trainer);
 

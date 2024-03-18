@@ -63,6 +63,8 @@ public:
     //predict
     Matrixd predict(Matrixd& input);
 
+    void SaveNeuralNetworkData(std::string path);
+    void LoadNeuralNetworkData(std::string path);
 
 };
 
