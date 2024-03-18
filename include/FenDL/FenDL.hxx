@@ -10,6 +10,7 @@
 #include <FenDL/LossFunction.hxx>
 #include <FenDL/TrainerStrategy.hxx>
 #include <FenDL/Branch.hxx>
+#include <FenDL/Logging.hxx>
 
 #include <FenDL/NeuralNetworks/FunctionalModel.hxx>
 #include <FenDL/NeuralNetworks/SequentionalModel.hxx>

@@ -21,6 +21,7 @@ public:
             _epoch{0}{};
 
 
+
     template<typename Optimizator>
     typename std::enable_if<std::is_base_of<Optimizer, Optimizator>::value>::type
     setOptimizer(NeuralNetwork& network)
@@ -40,18 +41,30 @@ public:
 
     void setHyperparameters(double alfa,double gamma,double epsilon);
 
-    void fit(Matrixd& input,Matrixd& answer,double learning_speed,bool logging);
+    void fit(Matrixd& input,Matrixd& answer,double learning_speed,bool logging,double epsilon = 1e-8);
 
-    void fit(Branch branch,int epochs,double learning_speed,bool logging);
+    void fit(Branch branch,int epochs,double learning_speed,bool logging,double epsilon = 1e-8);
 
+    double getPercent(Matrixd answer,double epsilon){
+        double percent = 0;
+        for(int i = 0;i < answer.rows();i++){
+            for(int j = 0;j < answer.cols();j++){
+                if(abs(_network._layers[_network._layers.size()-1]->_active_values(i,j) - answer(i,j)) > epsilon)
+                    percent++;
+            }
+        }
+        return  100.0*percent/double(answer.size());
+    }
 
+    double _average_loss,
+            _average_percentage,_time_for_branch,
+            _time_for_test,_error_decreeding_speed,_learning_speed;
+    int _test_number,_epoch,_branch_size;
 
-
-
-public:
     std::shared_ptr<LossFunction> _loss_function;
+
 private:
-    double _epoch;
+
     std::shared_ptr<Optimizer> _optimizer;
 
     NeuralNetwork& _network;
