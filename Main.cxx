@@ -3,7 +3,7 @@
 int main() {
     Eigen::setNbThreads(2);
   NeuralNetwork network;
-  network.setLayers<PerceptronLayer>({100,10,2});
+  network.setLayers<PerceptronLayer>({10000,1000,2});
   network.setActivationFunction<Sigmoid>();
 
   TrainerStrategy trainer(network);
@@ -14,11 +14,11 @@ int main() {
   Logging log;
   log.startLogging(trainer);
 
-  Branch branch(100,2);
+  Branch branch(10000,2);
   branch.generateRandomBranch(10,0,0.9);
   branch.buildBranch();
 
-  trainer.fit(branch, 10000,0.5,false);
+  trainer.fit(branch, 10000,0.005,false);
 
   log.stopLogging();
 }
@@ -29,4 +29,4 @@ int main() {
 //Adagrad быстрый, точный, норм темка
 //ADAM средний по скорости, точный, идет без вопросов к глобальному минимуму не страшны неровности
 //BGFS быстрый, очень точный, огромные требования к оперативной памяти и процессору, оптимизатор 2-го порядка
-//GD медленный, точный, самый базовый оптимизатор работающий на градиенте0
+//GD медленный, точный, самый базовый оптимизатор работающий на градиенте

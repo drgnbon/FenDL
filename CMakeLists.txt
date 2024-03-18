@@ -4,6 +4,8 @@ project(FenDL)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+#set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
+set(SFML_STATIC_LIBRARIES TRUE)
 
 set(FenDL_headers_dir "${CMAKE_CURRENT_SOURCE_DIR}/include/FenDL")
 set(FenDL_sources_dir "${CMAKE_CURRENT_SOURCE_DIR}/src")
@@ -115,11 +117,17 @@ set(FenDL_sources
 add_library(FenDL ${FenDL_public_headers} ${FenDL_sources})
 
 target_include_directories(FenDL PUBLIC
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include;>"
-  "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>")
+        "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+        "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>")
 
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/dependencies/eigen-3.4.0")
 target_link_libraries(FenDL PUBLIC Eigen3::Eigen)
+
+
+target_link_libraries(FenDL PUBLIC sfml-graphics)
+set(SFML_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dependencies/SFML-2.6.1/lib/cmake/SFML")
+find_package(SFML 2.6 REQUIRED graphics network audio window system)
+
 
 add_executable(Main Main.cxx)
 target_link_libraries(Main PRIVATE FenDL)

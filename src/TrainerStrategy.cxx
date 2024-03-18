@@ -44,9 +44,10 @@ void TrainerStrategy::fit(Branch branch,int count_of_epochs, double learning_spe
             average_loss += _new_error;
             average_percentage += getPercent(branch._targets[_test_number],epsilon);
             if(logging)std::cout << _loss_function->getMediumLoss(_network._layers[_network._layers.size()-1]->_active_values,branch._targets[_test_number]) << "\n";
-
+            _loss_history.push_back(_new_error);
             _time_for_test = clock() - time_for_test;
         }
+        _loss_history.clear();
         _average_loss = average_loss/double(branch._count_of_tests);
         _average_percentage = average_percentage / double(branch._count_of_tests);
         _time_for_branch = clock() - time_for_branch;

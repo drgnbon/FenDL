@@ -52,6 +52,7 @@ public:
             _time_for_test,_error_decreeding_speed,_learning_speed;
     int _test_number,_epoch,_branch_size;
     bool _save_weights;
+    std::vector<double> _loss_history;
     std::shared_ptr<LossFunction> _loss_function;
     NeuralNetwork& _network;
 private:
