@@ -1486,17 +1486,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Logging">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/Logging.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/Logging.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/NeuralNetwork.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/include/FenDL/TrainerStrategy.hxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logging.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logging.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NeuralNetwork.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuralNetwork.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrainerStrategy.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainerStrategy.cxx" afterDir="false" />
-    </list>
+    <list default="true" id="115019fc-4702-4203-857e-fe7f31873321" name="Changes" comment="Logging" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10420,7 +10410,7 @@
       <workItem from="1710528444550" duration="7876000" />
       <workItem from="1710578568910" duration="432000" />
       <workItem from="1710783982632" duration="275000" />
-      <workItem from="1710790288628" duration="4039000" />
+      <workItem from="1710790288628" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="Prediction">
       <option name="closed" value="true" />
@@ -10510,7 +10500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710790466669</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Logging">
+      <option name="closed" value="true" />
+      <created>1710794385913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710794385914</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
