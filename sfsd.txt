@@ -1,0 +1,30 @@
+const ffi = require('ffi-napi');
+const ref = require('ref-napi');
+
+// Определяем типы данных
+const int = ref.types.int;
+const voidPtr = ref.refType(ref.types.void);
+
+// Подключаем user32.dll
+const user32 = ffi.Library('user32', {
+  'SetCursorPos': ['bool', ['int', 'int']],
+  'GetCursorPos': ['bool', [ref.refType(ref.types.void)]]
+});
+
+// Функция для получения текущей позиции курсора
+function getCursorPos() {
+  const point = { x: 0, y: 0 };
+  user32.GetCursorPos(ref.refType(point));
+  return point;
+}
+
+// Перемещаем курсор в позицию (100, 100)
+function moveCursor(x, y) {
+  user32.SetCursorPos(x, y);
+}
+
+// Использование функций
+console.log('Current position:', getCursorPos());
+moveCursor(100, 100);
+console.log('Moved to (100, 100)');
+console.log('Current position:', getCursorPos());
